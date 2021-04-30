@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour
     public void AddItemToDraw(string itemName) // ajouter le script de l'objet dragable
     {
         string varName = "Objet";
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < DrawingNeeded.Count; i++)
         {
             string lookAtThisVar = varName + i.ToString();
             if (ChangeVariable(lookAtThisVar, itemName))
@@ -76,7 +76,7 @@ public class GameManager : MonoBehaviour
         string varName = "Objet";
         foreach (string item in DrawingNeeded)
         {
-            for (int x = 0; x < 3; x++)
+            for (int x = 0; x < DrawingNeeded.Count; x++)
             {
                 string lookAtThisVar = varName + x.ToString();
                 if (IsValidInput(lookAtThisVar, item))
@@ -85,7 +85,7 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
-        return isValid == 3;
+        return isValid == DrawingNeeded.Count;
     }
 
     public bool IsValidInput(string draw, string wait)
