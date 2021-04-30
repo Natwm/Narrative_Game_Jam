@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
     #region PARAM
     public static GameManager instance;
 
+    [SerializeField] private List<string> DrawingNeeded = new List<string>();
+
     #endregion
 
     #region AWAKE | START | UPDATE
@@ -37,7 +39,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
-            AddItemToDraw("pomme");
+            print(IsDrawValid());//AddItemToDraw("pomme");
 
     }
     #endregion
@@ -66,6 +68,29 @@ public class GameManager : MonoBehaviour
             return true;
         }
         return false;
+    }
+
+    private bool IsDrawValid()
+    {
+        int isValid = 0;
+        string varName = "Objet";
+        foreach (string item in DrawingNeeded)
+        {
+            for (int x = 0; x < 3; x++)
+            {
+                string lookAtThisVar = varName + x.ToString();
+                if (IsValidInput(lookAtThisVar, item))
+                {
+                    isValid ++;
+                }
+            }
+        }
+        return isValid == 3;
+    }
+
+    public bool IsValidInput(string draw, string wait)
+    {
+        return DialogueLua.GetVariable(draw).AsString == wait;
     }
 
     public void test(string message)

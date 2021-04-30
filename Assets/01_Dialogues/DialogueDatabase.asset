@@ -116,7 +116,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Initial Value
-      value: 
+      value: peche
       type: 0
       typeString: CustomFieldType_Text
     - title: Description

@@ -13,6 +13,7 @@ public class CanvasManager : MonoBehaviour
     public static CanvasManager instance;
 
     [SerializeField] private GameObject share_Panel;
+    private bool TakeScreenshotOnNextFrame = false;
 
     #endregion
 
@@ -65,6 +66,37 @@ public class CanvasManager : MonoBehaviour
             .Share();
 
         share_Panel.SetActive(false);
+    }
+
+    private void OnPostRender()
+    {
+        if (TakeScreenshotOnNextFrame)
+        {
+            TakeScreenshotOnNextFrame = false;
+            RenderTexture renderTexture = Camera.main.targetTexture;
+
+            Texture2D renderResult = new Texture2D(renderTexture.width, renderTexture.height, TextureFormat.ARGB32, false);
+            Rect rect = new Rect(0, 0, renderTexture.width, renderTexture.height);
+            renderResult.ReadPixels(rect, 0, 0);
+
+            byte[] byteArray = renderResult.EncodeToPNG();
+
+            System.IO.File.WriteAllBytes(Application.dataPath + "/GameCapture.png", byteArray);
+            RenderTexture.ReleaseTemporary(renderTexture);
+            Camera.main.targetTexture = null;
+        }
+    }
+
+
+    private void TakeScreenshot (int width, int height)
+    {
+        Camera.main.targetTexture = RenderTexture.GetTemporary(width, height, 16);
+        TakeScreenshotOnNextFrame = true;
+    }
+
+    public static void TakeScreenDhot_Static(int width, int height)
+    {
+        instance.TakeScreenshot( width,  height);
     }
 
     #region GETTER & SETTER

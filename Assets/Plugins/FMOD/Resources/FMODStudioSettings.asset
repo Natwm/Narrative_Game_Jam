@@ -16,7 +16,7 @@ MonoBehaviour:
   HasSourceProject: 0
   HasPlatforms: 1
   sourceProjectPath: 
-  sourceBankPath: C:\NGJ\AUDIO\build
+  sourceBankPath: AUDIO\build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0
