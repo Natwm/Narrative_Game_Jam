@@ -9,6 +9,9 @@ public class StickerBehaviours : MonoBehaviour
     public GameObject SplashSpawn;
     public float spawnSpeed = 1f;
 
+    [SerializeField] private float rotationSpeed = 0.5f;
+    [SerializeField] private float splashScaleMax = 0.5f;
+
     private bool isMoving = false;
     private bool isSpawned;
 
@@ -23,8 +26,13 @@ public class StickerBehaviours : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isMoving && Input.GetKeyDown(KeyCode.A)){
-            transform.DORotate((transform.rotation.eulerAngles + new Vector3(0, 0.2f, 0)), 0.01f);
+        if(isMoving && Input.GetKey(KeyCode.A)){
+            transform.DORotate((transform.rotation.eulerAngles + new Vector3(0, -rotationSpeed, 0)), 0.01f);
+        }
+
+        if (isMoving && Input.GetKey(KeyCode.E))
+        {
+            transform.DORotate((transform.rotation.eulerAngles + new Vector3(0, rotationSpeed, 0)), 0.01f);
         }
     }
 
@@ -36,7 +44,7 @@ public class StickerBehaviours : MonoBehaviour
             if (!isSpawned)
             {
                 GameObject spawn = Instantiate(SplashSpawn, SplashScreen.transform.position, Quaternion.identity);
-                spawn.transform.DOScale(Random.RandomRange(0.023f,.04f), spawnSpeed);
+                spawn.transform.DOScale(Random.RandomRange(0.023f, splashScaleMax), spawnSpeed);
                 spawn.transform.DORotate(new Vector3(0, Random.RandomRange(0, 360), 0), 0.001f);
             }
         }
