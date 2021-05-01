@@ -39,6 +39,8 @@ public class Mouse_Movement : MonoBehaviour
                 held = true;
                 hit.collider.attachedRigidbody.isKinematic = true;
                 objectToMove = hit.collider.gameObject;
+                if(objectToMove != null && objectToMove.GetComponent<StickerBehaviours>() != null)
+                    objectToMove.GetComponent<StickerBehaviours>().IsMoving = true;
             }
         }
     }
@@ -61,6 +63,8 @@ public class Mouse_Movement : MonoBehaviour
         {
             held = false;
             objectToMove.GetComponent<Rigidbody>().isKinematic = false;
+            if (objectToMove != null && objectToMove.GetComponent<StickerBehaviours>() != null)
+                objectToMove.GetComponent<StickerBehaviours>().IsMoving = false;
         }
 
         if (held)
