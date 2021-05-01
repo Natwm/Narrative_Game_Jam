@@ -9,12 +9,14 @@ public class StickerBehaviours : MonoBehaviour
     public GameObject SplashSpawn;
     public float spawnSpeed = 1f;
     public Mouse_Movement move;
+    Timer timer;
     [SerializeField] private float rotationSpeed = 0.5f;
     [SerializeField] private float splashScaleMax = 0.5f;
 
     private bool isMoving = false;
     public bool isSpawned;
-
+    public float fadetimer;
+    bool hasfaded;
     //Suce
     public bool IsMoving { get => isMoving; set => isMoving = value; }
 
@@ -22,7 +24,8 @@ public class StickerBehaviours : MonoBehaviour
     void Start()
     {
         SplashScreen = transform.GetChild(0).gameObject;
-        
+        timer = new Timer(fadetimer);
+       
     }
 
     // Update is called once per frame
@@ -41,6 +44,14 @@ public class StickerBehaviours : MonoBehaviour
         {
             transform.DOScale(0.4f, 0);
         }
+        if (timer.IsFinished())
+        {
+            if (!hasfaded)
+            {
+            Destroy(transform.GetChild(1).gameObject);
+                hasfaded = true;
+            }
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -55,6 +66,8 @@ public class StickerBehaviours : MonoBehaviour
                 spawn.transform.localPosition = new Vector3(0,0,0.1f);
                 spawn.transform.DOScale(Random.Range(0.2f, splashScaleMax), spawnSpeed);
                 spawn.transform.DORotate(new Vector3(-90, 0, Random.Range(0, 360)), 0.001f);
+                spawn.GetComponent<SpriteRenderer>().DOFade(0, fadetimer);
+                timer.ResetPlay();
                 GetComponent<Rigidbody>().isKinematic = true;
                 GetComponent<BoxCollider>().isTrigger = true;
                 transform.DOScale(0.2f, 0.05f);
@@ -65,6 +78,8 @@ public class StickerBehaviours : MonoBehaviour
             }
         }
     }
+
+    
 
     /*private void OnCollisionEnter(Collision collision)
     {

@@ -290,6 +290,7 @@ MonoBehaviour:
   rotationSpeed: 0.5
   splashScaleMax: 0.5
   isSpawned: 0
+  fadetimer: 10
 --- !u!1 &432241737 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7987006625802660921, guid: 57dd66fab720fd8448ae286b62ebfcc6,
@@ -315,6 +316,7 @@ MonoBehaviour:
   rotationSpeed: 0.5
   splashScaleMax: 0.5
   isSpawned: 0
+  fadetimer: 10
 --- !u!1 &442957042
 GameObject:
   m_ObjectHideFlags: 0
@@ -414,6 +416,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7308133449116887914, guid: 57dd66fab720fd8448ae286b62ebfcc6,
+        type: 3}
+      propertyPath: fadetimer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7308133449116887914, guid: 57dd66fab720fd8448ae286b62ebfcc6,
         type: 3}
       propertyPath: splashScaleMax
@@ -721,6 +728,7 @@ MonoBehaviour:
   rotationSpeed: 0.5
   splashScaleMax: 0.5
   isSpawned: 0
+  fadetimer: 10
 --- !u!1001 &1085596186
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -865,6 +873,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57dd66fab720fd8448ae286b62ebfcc6, type: 3}
+--- !u!1 &1446152131 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2886261551616439762, guid: aa8374a30a2a3634aadc79370939765f,
+    type: 3}
+  m_PrefabInstance: {fileID: 805988947}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1446152134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446152131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbb12d9b49db0034d820753a18a743c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1474548234
 GameObject:
   m_ObjectHideFlags: 0
@@ -1021,6 +1047,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7308133449116887914, guid: 57dd66fab720fd8448ae286b62ebfcc6,
+        type: 3}
+      propertyPath: fadetimer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7308133449116887914, guid: 57dd66fab720fd8448ae286b62ebfcc6,
         type: 3}
       propertyPath: splashScaleMax
@@ -1255,6 +1286,7 @@ MonoBehaviour:
   rotationSpeed: 0.5
   splashScaleMax: 0.5
   isSpawned: 0
+  fadetimer: 10
 --- !u!1001 &1829896186
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1502,6 +1534,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7308133449116887914, guid: 57dd66fab720fd8448ae286b62ebfcc6,
+        type: 3}
+      propertyPath: fadetimer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7308133449116887914, guid: 57dd66fab720fd8448ae286b62ebfcc6,
         type: 3}
       propertyPath: splashScaleMax

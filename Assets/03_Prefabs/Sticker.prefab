@@ -109,9 +109,11 @@ MonoBehaviour:
   SplashSpawn: {fileID: 7549418876024220048, guid: f81955c347d4b6144ae95b2eaf1f6991,
     type: 3}
   spawnSpeed: 0.08
+  move: {fileID: 0}
   rotationSpeed: 0.5
-  splashScaleMax: 0.2
+  splashScaleMax: 0.5
   isSpawned: 0
+  fadetimer: 10
 --- !u!212 &4866263848332603273
 SpriteRenderer:
   m_ObjectHideFlags: 0
