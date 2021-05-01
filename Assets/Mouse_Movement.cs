@@ -1,13 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class Mouse_Movement : MonoBehaviour
 {
     public LayerMask ignoreLayer;
     public GameObject objectToMove;
     public float objectOffset;
+    public float scaleInc;
     bool held;
+    bool hasbeenglued;
+    Vector3 heldScale;
+   public int layerindex=1;
+
     Vector3 ScreenToWorld(Vector2 screenPos)
     {
         // Create a ray going into the scene starting 
@@ -35,12 +41,21 @@ public class Mouse_Movement : MonoBehaviour
         {
             if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Grab"))
             {
-                Debug.Log("Hit Object");
-                held = true;
-                hit.collider.attachedRigidbody.isKinematic = true;
-                objectToMove = hit.collider.gameObject;
-                if(objectToMove != null && objectToMove.GetComponent<StickerBehaviours>() != null)
-                    objectToMove.GetComponent<StickerBehaviours>().IsMoving = true;
+                
+                if (hit.collider.gameObject.GetComponent<StickerBehaviours>().isSpawned == false)
+                {
+                    held = true;
+                    hit.collider.attachedRigidbody.isKinematic = true;
+                    objectToMove = hit.collider.gameObject;
+                    objectToMove.GetComponent<SpriteRenderer>().sortingOrder = 10;
+                    objectToMove.GetComponent<BoxCollider>().isTrigger = true;
+                    if (objectToMove != null && objectToMove.GetComponent<StickerBehaviours>() != null)
+                    {
+                        objectToMove.GetComponent<StickerBehaviours>().IsMoving = true;
+                        objectToMove.GetComponent<StickerBehaviours>().move = this;
+                    }
+                }
+
             }
         }
     }
@@ -54,17 +69,26 @@ public class Mouse_Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
         if (Input.GetMouseButton(0))
         {
             GetObject();
-        /**/
+           
+
         }
         if (Input.GetMouseButtonUp(0))
         {
             held = false;
-            objectToMove.GetComponent<Rigidbody>().isKinematic = false;
+
             if (objectToMove != null && objectToMove.GetComponent<StickerBehaviours>() != null)
+            {
+                
+                objectToMove.GetComponent<Rigidbody>().isKinematic = false;
+                
                 objectToMove.GetComponent<StickerBehaviours>().IsMoving = false;
+                objectToMove.transform.DOScale(0.2f, 0.05f);
+            }
+            objectToMove = null;
         }
 
         if (held)
