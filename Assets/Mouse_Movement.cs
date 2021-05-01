@@ -53,6 +53,8 @@ public class Mouse_Movement : MonoBehaviour
                     {
                         objectToMove.GetComponent<StickerBehaviours>().IsMoving = true;
                         objectToMove.GetComponent<StickerBehaviours>().move = this;
+                        objectToMove.GetComponent<StickerBehaviours>().hasbeengrabbed = true;
+                        
                     }
                 }
 
@@ -84,7 +86,7 @@ public class Mouse_Movement : MonoBehaviour
             {
                 
                 objectToMove.GetComponent<Rigidbody>().isKinematic = false;
-                
+                objectToMove.GetComponent<BoxCollider>().isTrigger = false;
                 objectToMove.GetComponent<StickerBehaviours>().IsMoving = false;
                 objectToMove.transform.DOScale(0.2f, 0.05f);
             }

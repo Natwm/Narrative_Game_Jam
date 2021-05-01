@@ -246,7 +246,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ignoreLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 768
   objectToMove: {fileID: 432241737}
   objectOffset: 0.02
   scaleInc: 0.1
@@ -264,6 +264,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &284687852
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 284687854}
+  - component: {fileID: 284687853}
+  m_Layer: 0
+  m_Name: StickerSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &284687853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284687852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8880f2fc48ea24448a3f8f0d4ca64c22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberofspawn: 10
+  baseSticker: {fileID: 7987006625802660921, guid: 57dd66fab720fd8448ae286b62ebfcc6,
+    type: 3}
+  circleSize: 2.5
+--- !u!4 &284687854
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284687852}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.40276, y: -5.6821704, z: -2.334636}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &394996753 stripped
 GameObject:
@@ -291,6 +338,7 @@ MonoBehaviour:
   splashScaleMax: 0.5
   isSpawned: 0
   fadetimer: 10
+  hasbeengrabbed: 0
 --- !u!1 &432241737 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7987006625802660921, guid: 57dd66fab720fd8448ae286b62ebfcc6,
@@ -317,6 +365,7 @@ MonoBehaviour:
   splashScaleMax: 0.5
   isSpawned: 0
   fadetimer: 10
+  hasbeengrabbed: 0
 --- !u!1 &442957042
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,6 +778,7 @@ MonoBehaviour:
   splashScaleMax: 0.5
   isSpawned: 0
   fadetimer: 10
+  hasbeengrabbed: 0
 --- !u!1001 &1085596186
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1227,8 +1277,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1618806071}
   - component: {fileID: 1618806070}
-  m_Layer: 0
-  m_Name: GameObject
+  m_Layer: 2
+  m_Name: ColliderFeuille
   m_TagString: Glue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1287,6 +1337,7 @@ MonoBehaviour:
   splashScaleMax: 0.5
   isSpawned: 0
   fadetimer: 10
+  hasbeengrabbed: 0
 --- !u!1001 &1829896186
 PrefabInstance:
   m_ObjectHideFlags: 0

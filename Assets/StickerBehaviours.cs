@@ -16,6 +16,8 @@ public class StickerBehaviours : MonoBehaviour
     private bool isMoving = false;
     public bool isSpawned;
     public float fadetimer;
+
+    public bool hasbeengrabbed;
     bool hasfaded;
     //Suce
     public bool IsMoving { get => isMoving; set => isMoving = value; }
@@ -56,8 +58,8 @@ public class StickerBehaviours : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject.name);
-        if (other.gameObject.CompareTag("Glue") && !isMoving)
+        
+        if (other.gameObject.CompareTag("Glue") && !isMoving && hasbeengrabbed)
         {
             if (!isSpawned)
             {
