@@ -265,69 +265,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &284687852
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 284687854}
-  - component: {fileID: 284687853}
-  m_Layer: 0
-  m_Name: StickerSpawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &284687853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 284687852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8880f2fc48ea24448a3f8f0d4ca64c22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberofspawn: 10
-  baseSticker: {fileID: 7987006625802660921, guid: 57dd66fab720fd8448ae286b62ebfcc6,
-    type: 3}
-  circleSize: 2.5
-  namestoload:
-  - bird
-  - cat
-  - chair
-  - couch
-  - garden
-  - grandpa
-  - granny
-  - hina
-  - hina2
-  - hina3
-  - metal-boxes
-  - milk
-  - pizza
-  - teddy
-  - television
---- !u!4 &284687854
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 284687852}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.40276, y: -5.6821704, z: -2.334636}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &442957042
 GameObject:
   m_ObjectHideFlags: 0
@@ -790,6 +727,29 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 805988947}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1446152132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446152131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/MUSIC/MUSIC_AMBIANT
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!114 &1446152134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1108,3 +1068,72 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &831002526933351596
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 831002526670618944, guid: ab3a2a535656ae4498a66283ab25b5fe,
+        type: 3}
+      propertyPath: m_Name
+      value: StickerSpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 831002526670618946, guid: ab3a2a535656ae4498a66283ab25b5fe,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 831002526670618946, guid: ab3a2a535656ae4498a66283ab25b5fe,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.40276
+      objectReference: {fileID: 0}
+    - target: {fileID: 831002526670618946, guid: ab3a2a535656ae4498a66283ab25b5fe,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.6821704
+      objectReference: {fileID: 0}
+    - target: {fileID: 831002526670618946, guid: ab3a2a535656ae4498a66283ab25b5fe,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.334636
+      objectReference: {fileID: 0}
+    - target: {fileID: 831002526670618946, guid: ab3a2a535656ae4498a66283ab25b5fe,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831002526670618946, guid: ab3a2a535656ae4498a66283ab25b5fe,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 831002526670618946, guid: ab3a2a535656ae4498a66283ab25b5fe,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 831002526670618946, guid: ab3a2a535656ae4498a66283ab25b5fe,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 831002526670618946, guid: ab3a2a535656ae4498a66283ab25b5fe,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 831002526670618946, guid: ab3a2a535656ae4498a66283ab25b5fe,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 831002526670618946, guid: ab3a2a535656ae4498a66283ab25b5fe,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ab3a2a535656ae4498a66283ab25b5fe, type: 3}
