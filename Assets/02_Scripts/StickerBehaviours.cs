@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
-
+using FMOD;
+using FMODUnity;
 public class StickerBehaviours : MonoBehaviour
 {
     private GameObject SplashScreen;
@@ -12,10 +13,12 @@ public class StickerBehaviours : MonoBehaviour
     Timer timer;
     [SerializeField] private float rotationSpeed = 0.5f;
     [SerializeField] private float splashScaleMax = 0.5f;
-
+    
     private bool isMoving = false;
     public bool isSpawned;
     public float fadetimer;
+    
+    public bool hasbeengrabbed;
     bool hasfaded;
     //Suce
     public bool IsMoving { get => isMoving; set => isMoving = value; }
@@ -42,7 +45,7 @@ public class StickerBehaviours : MonoBehaviour
 
         if (IsMoving)
         {
-            transform.DOScale(0.4f, 0);
+            transform.DOScale(1.2f, 0);
         }
         if (timer.IsFinished())
         {
@@ -56,8 +59,8 @@ public class StickerBehaviours : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject.name);
-        if (other.gameObject.CompareTag("Glue") && !isMoving)
+        
+        if (other.gameObject.CompareTag("Glue") && !isMoving && hasbeengrabbed)
         {
             if (!isSpawned)
             {
@@ -70,7 +73,7 @@ public class StickerBehaviours : MonoBehaviour
                 timer.ResetPlay();
                 GetComponent<Rigidbody>().isKinematic = true;
                 GetComponent<BoxCollider>().isTrigger = true;
-                transform.DOScale(0.2f, 0.05f);
+                transform.DOScale(1f, 0.05f);
                 GetComponent<SpriteRenderer>().sortingOrder = move.layerindex;
                 move.layerindex++;
                 isSpawned = true;

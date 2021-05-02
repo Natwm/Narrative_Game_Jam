@@ -37,7 +37,7 @@ public class Mouse_Movement : MonoBehaviour
         Ray tryGrab = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
-        if (Physics.Raycast(tryGrab,out hit))
+        if (Physics.Raycast(tryGrab,out hit) && !held)
         {
             if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Grab"))
             {
@@ -47,12 +47,14 @@ public class Mouse_Movement : MonoBehaviour
                     held = true;
                     hit.collider.attachedRigidbody.isKinematic = true;
                     objectToMove = hit.collider.gameObject;
-                    objectToMove.GetComponent<SpriteRenderer>().sortingOrder = 10;
+                    objectToMove.GetComponent<SpriteRenderer>().sortingOrder = 10000;
                     objectToMove.GetComponent<BoxCollider>().isTrigger = true;
                     if (objectToMove != null && objectToMove.GetComponent<StickerBehaviours>() != null)
                     {
                         objectToMove.GetComponent<StickerBehaviours>().IsMoving = true;
                         objectToMove.GetComponent<StickerBehaviours>().move = this;
+                        objectToMove.GetComponent<StickerBehaviours>().hasbeengrabbed = true;
+                        
                     }
                 }
 
@@ -84,9 +86,9 @@ public class Mouse_Movement : MonoBehaviour
             {
                 
                 objectToMove.GetComponent<Rigidbody>().isKinematic = false;
-                
+                objectToMove.GetComponent<BoxCollider>().isTrigger = false;
                 objectToMove.GetComponent<StickerBehaviours>().IsMoving = false;
-                objectToMove.transform.DOScale(0.2f, 0.05f);
+                objectToMove.transform.DOScale(1f, 0.05f);
             }
             objectToMove = null;
         }

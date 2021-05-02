@@ -246,7 +246,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ignoreLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 768
   objectToMove: {fileID: 432241737}
   objectOffset: 0.02
   scaleInc: 0.1
@@ -264,6 +264,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &284687852
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 284687854}
+  - component: {fileID: 284687853}
+  m_Layer: 0
+  m_Name: StickerSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &284687853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284687852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8880f2fc48ea24448a3f8f0d4ca64c22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberofspawn: 10
+  baseSticker: {fileID: 7987006625802660921, guid: 57dd66fab720fd8448ae286b62ebfcc6,
+    type: 3}
+  circleSize: 2.5
+--- !u!4 &284687854
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284687852}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.40276, y: -5.6821704, z: -2.334636}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &394996753 stripped
 GameObject:
@@ -291,6 +338,7 @@ MonoBehaviour:
   splashScaleMax: 0.5
   isSpawned: 0
   fadetimer: 10
+  hasbeengrabbed: 0
 --- !u!1 &432241737 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7987006625802660921, guid: 57dd66fab720fd8448ae286b62ebfcc6,
@@ -317,6 +365,7 @@ MonoBehaviour:
   splashScaleMax: 0.5
   isSpawned: 0
   fadetimer: 10
+  hasbeengrabbed: 0
 --- !u!1 &442957042
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,11 +548,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GameManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 4730806526893610811, guid: aa8374a30a2a3634aadc79370939765f,
-        type: 3}
-      propertyPath: musique
-      value: event:/MUSIC/MUSIC
       objectReference: {fileID: 0}
     - target: {fileID: 4730806526893610811, guid: aa8374a30a2a3634aadc79370939765f,
         type: 3}
@@ -734,6 +778,7 @@ MonoBehaviour:
   splashScaleMax: 0.5
   isSpawned: 0
   fadetimer: 10
+  hasbeengrabbed: 0
 --- !u!1001 &1085596186
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -796,7 +841,7 @@ PrefabInstance:
     - target: {fileID: 11426072, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
       propertyPath: initialDatabase
       value: 
-      objectReference: {fileID: 11400000, guid: a1a52d6f971642f44ba8ae1ec7e7c2f4,
+      objectReference: {fileID: 11400000, guid: 43fdeb06dfcb9d848af797fa7ebf63b8,
         type: 2}
     - target: {fileID: 11426072, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
       propertyPath: displaySettings.dialogueUI
@@ -884,29 +929,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 805988947}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1446152132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1446152131}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/MUSIC/MUSIC
-  PlayEvent: 1
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
 --- !u!114 &1446152134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -945,7 +967,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1474548234}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!20 &1474548236
 Camera:
   m_ObjectHideFlags: 0
@@ -1012,10 +1034,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1474548234}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Script: {fileID: 11500000, guid: d5f0a64ef18d94c4a9c0bf8e38dc640d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ListenerNumber: -1
+  moveAmount: 5
+  edge: 20
 --- !u!1 &1483795647
 GameObject:
   m_ObjectHideFlags: 0
@@ -1223,7 +1246,7 @@ MonoBehaviour:
   allowBarksDuringConversations: 0
   skipBarkIfNoValidEntries: 0
   cacheBarkLines: 0
-  conversation: Entretient0
+  conversation: New Conversation 1
   conversationConversant: {fileID: 845553718}
   conversationActor: {fileID: 1033502929}
   startConversationEntryID: -1
@@ -1244,7 +1267,7 @@ MonoBehaviour:
   useConversationTitlePicker: 1
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
-  selectedDatabase: {fileID: 11400000, guid: a1a52d6f971642f44ba8ae1ec7e7c2f4, type: 2}
+  selectedDatabase: {fileID: 11400000, guid: 43fdeb06dfcb9d848af797fa7ebf63b8, type: 2}
 --- !u!4 &1606298372
 Transform:
   m_ObjectHideFlags: 0
@@ -1253,7 +1276,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1606298370}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.1836689, y: -9.1218605, z: -6.3061075}
+  m_LocalPosition: {x: 1.1836689, y: 0.22, z: -6.3061075}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1269,8 +1292,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1618806071}
   - component: {fileID: 1618806070}
-  m_Layer: 0
-  m_Name: GameObject
+  m_Layer: 2
+  m_Name: ColliderFeuille
   m_TagString: Glue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1329,6 +1352,7 @@ MonoBehaviour:
   splashScaleMax: 0.5
   isSpawned: 0
   fadetimer: 10
+  hasbeengrabbed: 0
 --- !u!1001 &1829896186
 PrefabInstance:
   m_ObjectHideFlags: 0
