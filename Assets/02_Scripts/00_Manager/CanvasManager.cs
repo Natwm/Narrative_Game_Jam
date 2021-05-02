@@ -13,7 +13,14 @@ public class CanvasManager : MonoBehaviour
     public static CanvasManager instance;
 
     [SerializeField] private GameObject share_Panel;
+    [SerializeField] private GameObject inputPanel_Panel;
+    [SerializeField] private GameObject Validation_Panel;
+
+    [SerializeField] private GameObject inputField;
+
     private bool TakeScreenshotOnNextFrame = false;
+
+    public string plush = "";
 
     #endregion
 
@@ -28,7 +35,8 @@ public class CanvasManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        inputPanel_Panel.SetActive(false);
+        Validation_Panel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -37,6 +45,22 @@ public class CanvasManager : MonoBehaviour
         
     }
     #endregion
+
+    public void ChangePlushName(string s)
+    {
+        plush = s;
+    }
+
+    public void ShowinputPanel()
+    {
+        inputPanel_Panel.SetActive(true);
+    }
+
+    public void UpdatePelucheName()
+    {
+        print(plush);
+        DialogueLua.SetVariable("PlushName", plush); 
+    }
 
     public void ShareScore()
     {
@@ -104,7 +128,15 @@ public class CanvasManager : MonoBehaviour
     #endregion
 
     #region Lua region
+    void OnEnable()
+    {
+        Lua.RegisterFunction("InputPanel", this, SymbolExtensions.GetMethodInfo(() => ShowinputPanel()));
+    }
 
+    void OnDisable()
+    {
+        Lua.UnregisterFunction("InputPanel");
+    }
 
     #endregion
 }
