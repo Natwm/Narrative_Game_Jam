@@ -14,6 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conditionFunctions: []
   scriptFunctions:
-  - functionName: test
-    parameters: 02000000
+  - functionName: Dad
+    parameters: 
+    returnValue: 0
+  - functionName: Mom
+    parameters: 
+    returnValue: 0
+  - functionName: Hina
+    parameters: 
+    returnValue: 0
+  - functionName: Ethan
+    parameters: 
+    returnValue: 0
+  - functionName: Nothing
+    parameters: 
     returnValue: 0

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 935899b62f48ae5498594680ed17d133, type: 3}
-  m_Name: DialogueDatabase (Auto-Backup)
+  m_Name: DialogueEtahen
   m_EditorClassIdentifier: 
   version: 
   author: 
@@ -496,8 +496,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 931.7021
-        y: 235.95746
+        x: 1115.9181
+        y: 373.06113
         width: 160
         height: 30
     - id: 1
@@ -529,7 +529,7 @@ MonoBehaviour:
       - title: Dialogue Text
         value: "Ok \xE0 chaque fois que je te pose une question, tu devras r\xE9pondre
           avec un collage \xE0 [nom de la peluche], quand tu auras termin\xE9 tu
-          pourras me donner [nom de peluche] "
+          pourras me donner [nom de peluche]"
         type: 0
         typeString: 
       - title: Parenthetical
@@ -569,8 +569,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 931.7021
-        y: 285.95746
+        x: 1115.9181
+        y: 423.06116
         width: 160
         height: 30
     - id: 2
@@ -601,7 +601,7 @@ MonoBehaviour:
         typeString: 
       - title: Dialogue Text
         value: " Ethan, est-ce que tu pourrais me parler de comment \xE7a se passait
-          \xE0 la maison ?\r\nEthan : \u2026\r"
+          \xE0 la maison ?\r"
         type: 0
         typeString: 
       - title: Parenthetical
@@ -635,14 +635,14 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Dad()
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 931.7021
-        y: 335.95746
+        x: 1115.9181
+        y: 473.06116
         width: 160
         height: 30
     - id: 3
@@ -706,14 +706,14 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Mom()
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 931.7021
-        y: 385.95734
+        x: 1115.9181
+        y: 523.0611
         width: 160
         height: 30
     - id: 4
@@ -783,8 +783,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 931.7021
-        y: 435.95734
+        x: 1115.9181
+        y: 573.0611
         width: 160
         height: 30
     - id: 5
@@ -814,7 +814,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: souvent y a de la <color = red >pizza</color>
+        value: souvent y a de la <color=red>pizza</color>
         type: 0
         typeString: 
       - title: Parenthetical
@@ -848,14 +848,14 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Hina()
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 931.7021
-        y: 485.95734
+        x: 1115.9181
+        y: 623.0611
         width: 160
         height: 30
     - id: 6
@@ -919,14 +919,14 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Ethan()
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 931.7021
-        y: 535.9573
+        x: 1115.9181
+        y: 673.06116
         width: 160
         height: 30
     - id: 7
@@ -996,14 +996,14 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Nothing()
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 931.7021
-        y: 585.9574
+        x: 1115.9181
+        y: 723.06104
         width: 160
         height: 30
     - id: 9
@@ -1073,8 +1073,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 931.7021
-        y: 685.9575
+        x: 1115.9181
+        y: 823.06104
         width: 160
         height: 30
     - id: 10
@@ -1145,8 +1145,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 841.7021
-        y: 635.9574
+        x: 1025.9181
+        y: 773.06104
         width: 160
         height: 30
     - id: 11
@@ -1216,8 +1216,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 931.7021
-        y: 735.9574
+        x: 1115.9181
+        y: 873.06104
         width: 160
         height: 30
     - id: 12
@@ -1287,8 +1287,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 931.7021
-        y: 785.9574
+        x: 1115.9181
+        y: 923.06104
         width: 160
         height: 30
     - id: 13
@@ -1318,8 +1318,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Papa... il est souvent sur le <color = red>canap\xE9</color>\\.\\.
-          il regarde la <color = red>t\xE9l\xE9</color>"
+        value: "Papa... il est souvent sur le <color=red>canap\xE9</color>\\.\\.
+          il regarde la<color=red>t\xE9l\xE9</color>"
         type: 0
         typeString: 
       - title: Parenthetical
@@ -1359,8 +1359,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 931.7021
-        y: 835.9574
+        x: 1115.9181
+        y: 973.0611
         width: 160
         height: 30
     - id: 14
@@ -1430,8 +1430,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 931.7021
-        y: 885.9574
+        x: 1115.9181
+        y: 1023.0611
         width: 160
         height: 30
     - id: 15
@@ -1501,8 +1501,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 931.7021
-        y: 935.9574
+        x: 1115.9181
+        y: 1073.0613
         width: 160
         height: 30
     - id: 16
@@ -1572,8 +1572,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 931.7021
-        y: 985.9574
+        x: 1115.9181
+        y: 1123.0613
         width: 160
         height: 30
     - id: 17
@@ -1643,8 +1643,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 931.7021
-        y: 1035.9574
+        x: 1115.9181
+        y: 1173.061
         width: 160
         height: 30
     - id: 18
@@ -1674,8 +1674,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Elle prend des <color = red> bo\xEEtes en m\xE9tal dans le frigo
-          </color>"
+        value: "Elle prend des <color=red> bo\xEEtes en m\xE9tal dans le frigo </color>"
         type: 0
         typeString: 
       - title: Parenthetical
@@ -1715,8 +1714,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 931.7021
-        y: 1085.9574
+        x: 1115.9181
+        y: 1223.061
         width: 160
         height: 30
     - id: 19
@@ -1786,8 +1785,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 931.7021
-        y: 1135.9574
+        x: 1115.9181
+        y: 1273.061
         width: 160
         height: 30
     - id: 20
@@ -1857,8 +1856,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 931.7021
-        y: 1185.9574
+        x: 1115.9181
+        y: 1323.061
         width: 160
         height: 30
     - id: 21
@@ -1889,7 +1888,7 @@ MonoBehaviour:
         typeString: 
       - title: Dialogue Text
         value: "Papa dit que c\u2019est pour les adultes. C\u2019est pour combattre
-          le <color = red> d\xE9mon</color>"
+          le <color=red> d\xE9mon</color>"
         type: 0
         typeString: 
       - title: Parenthetical
@@ -1929,8 +1928,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 931.7021
-        y: 1235.9574
+        x: 1115.9181
+        y: 1373.061
         width: 160
         height: 30
     - id: 22
@@ -2001,8 +2000,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 931.7021
-        y: 1285.9574
+        x: 1115.9181
+        y: 1423.061
         width: 160
         height: 30
     - id: 23
@@ -2072,8 +2071,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 931.7021
-        y: 1335.9574
+        x: 1115.9181
+        y: 1473.061
         width: 160
         height: 30
     - id: 24
@@ -2103,7 +2102,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Je pr\xE9pare le <color = red>biberon</color>  comme Papa m\u2019a
+        value: "Je pr\xE9pare le <color=red>biberon</color>  comme Papa m\u2019a
           montr\xE9."
         type: 0
         typeString: 
@@ -2144,8 +2143,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 931.7021
-        y: 1385.9574
+        x: 1115.9181
+        y: 1523.061
         width: 160
         height: 30
     - id: 25
@@ -2175,7 +2174,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Il faut pas le faire trop chaud sinon <color =red>Hina</color> pleure
+        value: Il faut pas le faire trop chaud sinon <color=red>Hina</color> pleure
           et Maman est pas contente
         type: 0
         typeString: 
@@ -2206,77 +2205,6 @@ MonoBehaviour:
       - originConversationID: 2
         originDialogueID: 25
         destinationConversationID: 2
-        destinationDialogueID: 26
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 931.7021
-        y: 1435.9574
-        width: 160
-        height: 30
-    - id: 26
-      fields:
-      - title: Title
-        value: New Dialogue Entry
-        type: 0
-        typeString: 
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 2
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: 
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 2
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 2
-        originDialogueID: 26
-        destinationConversationID: 2
         destinationDialogueID: 27
         isConnector: 0
         priority: 2
@@ -2287,8 +2215,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 931.7021
-        y: 1485.9574
+        x: 1115.9181
+        y: 1573.061
         width: 160
         height: 30
     - id: 27
@@ -2358,14 +2286,14 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 931.7021
-        y: 1535.9574
+        x: 1115.9181
+        y: 1623.061
         width: 160
         height: 30
     - id: 28
       fields:
       - title: Title
-        value: New Dialogue Entry
+        value: 
         type: 0
         typeString: 
       - title: Pictures
@@ -2377,11 +2305,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -2389,7 +2317,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 
+        value: "On se revoit bient\xF4t, d\u2019accord ?"
         type: 0
         typeString: 
       - title: Parenthetical
@@ -2413,7 +2341,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
@@ -2423,12 +2351,12 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 931.7021
-        y: 1585.9574
+        x: 1115.9181
+        y: 1673.061
         width: 160
         height: 30
-    canvasScrollPosition: {x: 622.2678, y: 1201.3242}
-    canvasZoom: 1.8999991
+    canvasScrollPosition: {x: 509.50427, y: 937.6245}
+    canvasZoom: 0.9399997
   syncInfo:
     syncActors: 0
     syncItems: 0

@@ -502,6 +502,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4730806526893610811, guid: aa8374a30a2a3634aadc79370939765f,
         type: 3}
+      propertyPath: musique
+      value: event:/MUSIC/MUSIC
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730806526893610811, guid: aa8374a30a2a3634aadc79370939765f,
+        type: 3}
       propertyPath: DrawingNeeded.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -791,7 +796,7 @@ PrefabInstance:
     - target: {fileID: 11426072, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
       propertyPath: initialDatabase
       value: 
-      objectReference: {fileID: 11400000, guid: 43fdeb06dfcb9d848af797fa7ebf63b8,
+      objectReference: {fileID: 11400000, guid: a1a52d6f971642f44ba8ae1ec7e7c2f4,
         type: 2}
     - target: {fileID: 11426072, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
       propertyPath: displaySettings.dialogueUI
@@ -879,6 +884,29 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 805988947}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1446152132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446152131}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/MUSIC/MUSIC
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!114 &1446152134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -902,6 +930,7 @@ GameObject:
   - component: {fileID: 1474548237}
   - component: {fileID: 1474548236}
   - component: {fileID: 1474548235}
+  - component: {fileID: 1474548238}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -916,7 +945,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1474548234}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1474548236
 Camera:
   m_ObjectHideFlags: 0
@@ -974,6 +1003,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: 180.00002}
+--- !u!114 &1474548238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474548234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListenerNumber: -1
 --- !u!1 &1483795647
 GameObject:
   m_ObjectHideFlags: 0
@@ -1181,7 +1223,7 @@ MonoBehaviour:
   allowBarksDuringConversations: 0
   skipBarkIfNoValidEntries: 0
   cacheBarkLines: 0
-  conversation: New Conversation 1
+  conversation: Entretient0
   conversationConversant: {fileID: 845553718}
   conversationActor: {fileID: 1033502929}
   startConversationEntryID: -1
@@ -1202,7 +1244,7 @@ MonoBehaviour:
   useConversationTitlePicker: 1
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
-  selectedDatabase: {fileID: 11400000, guid: 43fdeb06dfcb9d848af797fa7ebf63b8, type: 2}
+  selectedDatabase: {fileID: 11400000, guid: a1a52d6f971642f44ba8ae1ec7e7c2f4, type: 2}
 --- !u!4 &1606298372
 Transform:
   m_ObjectHideFlags: 0

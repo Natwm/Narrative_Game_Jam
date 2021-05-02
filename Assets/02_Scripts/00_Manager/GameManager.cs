@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using PixelCrushers.DialogueSystem;
+using FMODUnity;
 
 public class GameManager : MonoBehaviour
 {
@@ -16,6 +17,11 @@ public class GameManager : MonoBehaviour
 
     #region PARAM
     public static GameManager instance;
+
+    [FMODUnity.EventRef]
+    public string musique;
+
+    FMOD.Studio.EventInstance soundEvent;
 
     [SerializeField] private List<string> DrawingNeeded = new List<string>();
 
@@ -32,7 +38,8 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-
+        soundEvent = FMODUnity.RuntimeManager.CreateInstance(musique);
+        soundEvent.start();
     }
 
     // Update is called once per frame
@@ -98,6 +105,31 @@ public class GameManager : MonoBehaviour
         print(message);
     }
 
+    public void DadMusique()
+    {
+        soundEvent.setParameterByName("MUSIC", 0.0f);
+    }
+
+    public void MotherMusique()
+    {
+        soundEvent.setParameterByName("MUSIC", 0.25f);
+    }
+
+    public void HinaMusique()
+    {
+        soundEvent.setParameterByName("MUSIC", .45f);
+    }
+
+    public void EthanMusique()
+    {
+        soundEvent.setParameterByName("MUSIC", .65f);
+    }
+
+    public void NothingMusique()
+    {
+        soundEvent.setParameterByName("MUSIC", 1f);
+    }
+
     #region ChangeEnum
 
     #endregion
@@ -116,7 +148,11 @@ public class GameManager : MonoBehaviour
     #region Lua region
     void OnEnable()
     {
-        Lua.RegisterFunction("test", this, SymbolExtensions.GetMethodInfo(() => test(string.Empty)));
+        Lua.RegisterFunction("Dad", this, SymbolExtensions.GetMethodInfo(() => EthanMusique()));
+        Lua.RegisterFunction("Mom", this, SymbolExtensions.GetMethodInfo(() => EthanMusique()));
+        Lua.RegisterFunction("Hina", this, SymbolExtensions.GetMethodInfo(() => EthanMusique()));
+        Lua.RegisterFunction("Ethan", this, SymbolExtensions.GetMethodInfo(() => EthanMusique()));
+        Lua.RegisterFunction("Nothing", this, SymbolExtensions.GetMethodInfo(() => EthanMusique()));
     }
 
     void OnDisable()
