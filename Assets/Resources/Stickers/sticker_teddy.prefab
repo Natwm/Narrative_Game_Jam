@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 7308133449116887914}
   - component: {fileID: 4866263848332603273}
   m_Layer: 8
-  m_Name: Sticker
+  m_Name: sticker_teddy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59,7 +59,7 @@ Transform:
   m_GameObject: {fileID: 7987006625802660921}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5457069595470512973}
   m_Father: {fileID: 0}
@@ -76,8 +76,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.89, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.3082986, y: 0.3195285, z: 0.05}
+  m_Center: {x: 0.0037035644, y: -0.0047027245, z: 0.012890337}
 --- !u!54 &7987006625802660922
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -111,7 +111,7 @@ MonoBehaviour:
   spawnSpeed: 0.08
   move: {fileID: 0}
   rotationSpeed: 1
-  splashScaleMax: 0.5
+  splashScaleMax: 0.1
   isSpawned: 0
   fadetimer: 10
   hasbeengrabbed: 0
@@ -154,7 +154,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: f1365541c3e697c4d9d138f92aaa69f4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 50e46c6435d71eb43aba24573825097d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

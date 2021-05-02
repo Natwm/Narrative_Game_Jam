@@ -334,8 +334,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 389
-        y: 355
+        x: 545
+        y: 279
         width: 160
         height: 30
     - id: 2
@@ -407,8 +407,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 681
-        y: 562
+        x: 544
+        y: 389
         width: 160
         height: 30
     - id: 3
@@ -480,8 +480,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1055
-        y: 418
+        x: 806
+        y: 391
         width: 160
         height: 30
     - id: 4
@@ -547,12 +547,12 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1053
-        y: 692
+        x: 809
+        y: 482
         width: 160
         height: 30
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasZoom: 1.1799998
   syncInfo:
     syncActors: 0
     syncItems: 0
