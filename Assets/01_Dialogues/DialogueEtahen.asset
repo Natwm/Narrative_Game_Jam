@@ -2440,7 +2440,7 @@ MonoBehaviour:
         y: 290.0422
         width: 160
         height: 30
-    canvasScrollPosition: {x: 600.53925, y: 100.711426}
+    canvasScrollPosition: {x: 507.143, y: 62.975555}
     canvasZoom: 1.0599996
   syncInfo:
     syncActors: 0
