@@ -1409,6 +1409,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveAmount: 5
   edge: 20
+  heightMinMax: {x: -0.2, y: 0.2}
+  widthMinmax: {x: -2.5, y: 2.3}
 --- !u!1 &1483795647
 GameObject:
   m_ObjectHideFlags: 0
