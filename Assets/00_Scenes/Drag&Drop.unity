@@ -250,6 +250,9 @@ MonoBehaviour:
   objectToMove: {fileID: 0}
   objectOffset: 0.02
   scaleInc: 0.1
+  hands:
+  - {fileID: 2800000, guid: ecad4e6a32937354bb1d2e5fa41f0381, type: 3}
+  - {fileID: 2800000, guid: 1eca8168c511bee40ad3a3c5f1d4d344, type: 3}
   layerindex: 1
 --- !u!4 &90292174
 Transform:
@@ -1294,6 +1297,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cbb12d9b49db0034d820753a18a743c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1446152136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446152131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c8d3ff0c4ce234aaca24411f8515aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1474548234

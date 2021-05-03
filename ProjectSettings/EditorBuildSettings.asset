@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/00_Scenes/Drag&Drop.unity
+    guid: eab2b45cb0abf8342ad767caa0d69123
   m_configObjects: {}

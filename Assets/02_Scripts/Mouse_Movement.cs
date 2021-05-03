@@ -12,6 +12,7 @@ public class Mouse_Movement : MonoBehaviour
     bool held;
     bool hasbeenglued;
     Vector3 heldScale;
+    public Texture2D[] hands;
    public int layerindex=1;
 
     Vector3 ScreenToWorld(Vector2 screenPos)
@@ -75,13 +76,13 @@ public class Mouse_Movement : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             GetObject();
-           
+            Cursor.SetCursor(hands[1],Vector2.zero ,CursorMode.Auto);
 
         }
         if (Input.GetMouseButtonUp(0))
         {
             held = false;
-
+            Cursor.SetCursor(hands[0], Vector2.zero, CursorMode.Auto);
             if (objectToMove != null && objectToMove.GetComponent<StickerBehaviours>() != null)
             {
                 
