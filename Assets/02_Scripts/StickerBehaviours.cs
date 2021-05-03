@@ -23,6 +23,7 @@ public class StickerBehaviours : MonoBehaviour
     //Suce
     public bool IsMoving { get => isMoving; set => isMoving = value; }
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +35,10 @@ public class StickerBehaviours : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.mouseScrollDelta.y != 0 && isMoving)
+        {
+            transform.DORotate((transform.eulerAngles + new Vector3(0, rotationSpeed * 10 * Input.mouseScrollDelta.y, 0)), 0.01f);
+        }
         if(isMoving && Input.GetKey(KeyCode.A)){
             transform.DORotate((transform.rotation.eulerAngles + new Vector3(0, -rotationSpeed, 0)), 0.01f);
         }

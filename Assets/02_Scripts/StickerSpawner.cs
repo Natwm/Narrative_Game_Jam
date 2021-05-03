@@ -29,7 +29,7 @@ public class StickerSpawner : MonoBehaviour
             Vector2 circle = Random.insideUnitCircle*circleSize;
             Vector3 spawnPos = new Vector3(circle.x,1, circle.y);
             newSticker.transform.SetPositionAndRotation(spawnPos,newSticker.transform.rotation);
-
+            
         }
     }
 
