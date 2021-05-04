@@ -29,3 +29,12 @@ MonoBehaviour:
   - functionName: Nothing
     parameters: 
     returnValue: 0
+  - functionName: AddItem
+    parameters: 02000000
+    returnValue: 0
+  - functionName: ResetItem
+    parameters: 
+    returnValue: 0
+  - functionName: waitForPlayerInput
+    parameters: 
+    returnValue: 0
