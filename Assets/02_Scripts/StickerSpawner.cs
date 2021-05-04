@@ -41,6 +41,7 @@ public class StickerSpawner : MonoBehaviour
             GameObject newSticker = GameObject.Instantiate(GetObjectbyName(arraytospawn[i]));
             Vector2 circle = Random.insideUnitCircle*circleSize;
             Vector3 spawnPos = new Vector3(circle.x,1, circle.y);
+            newSticker.GetComponent<StickerBehaviours>().stickerName = namestoload[i];
             newSticker.transform.SetPositionAndRotation(spawnPos,newSticker.transform.rotation);
             
         }

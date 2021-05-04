@@ -30,6 +30,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private List<string> DrawingNeeded = new List<string>();
 
+    public bool waitForPlayerInput = false;
+
     #endregion
 
     #region AWAKE | START | UPDATE
@@ -61,6 +63,15 @@ public class GameManager : MonoBehaviour
 
     #endregion
 
+    public void AddItemNeeded(string itemName) // ajouter le script de l'objet dragable
+    {
+        DrawingNeeded.Add(itemName);
+    }
+
+    public void ResetItemNeeded()
+    {
+        DrawingNeeded = new List<string>();
+    }
     public void AddItemToDraw(string itemName) // ajouter le script de l'objet dragable
     {
         string varName = "Objet";
@@ -147,7 +158,10 @@ public class GameManager : MonoBehaviour
     #endregion
 
     #region GETTER & SETTER
-
+    public void ChangeWaitForInput()
+    {
+        waitForPlayerInput = true;
+    }
     #endregion
 
     #region Lua region
@@ -158,11 +172,23 @@ public class GameManager : MonoBehaviour
         Lua.RegisterFunction("Hina", this, SymbolExtensions.GetMethodInfo(() => EthanMusique()));
         Lua.RegisterFunction("Ethan", this, SymbolExtensions.GetMethodInfo(() => EthanMusique()));
         Lua.RegisterFunction("Nothing", this, SymbolExtensions.GetMethodInfo(() => EthanMusique()));
+
+        Lua.RegisterFunction("AddItem", this, SymbolExtensions.GetMethodInfo(() => AddItemNeeded(string.Empty)));
+        Lua.RegisterFunction("ResetItem", this, SymbolExtensions.GetMethodInfo(() => ResetItemNeeded()));
+        Lua.RegisterFunction("waitForPlayerInput", this, SymbolExtensions.GetMethodInfo(() => ChangeWaitForInput()));
     }
 
     void OnDisable()
     {
-        Lua.UnregisterFunction("test"); 
+        Lua.UnregisterFunction("Dad");
+        Lua.UnregisterFunction("Mom");
+        Lua.UnregisterFunction("Hina");
+        Lua.UnregisterFunction("Ethan");
+        Lua.UnregisterFunction("Nothing");
+
+        Lua.UnregisterFunction("AddItem");
+        Lua.UnregisterFunction("ResetItem");
+        Lua.UnregisterFunction("waitForPlayerInput");
     }
 
     #endregion

@@ -4,8 +4,11 @@ using UnityEngine;
 using DG.Tweening;
 using FMOD;
 using FMODUnity;
+using PixelCrushers.DialogueSystem;
+
 public class StickerBehaviours : MonoBehaviour
 {
+
     private GameObject SplashScreen;
     public GameObject SplashSpawn;
     public float spawnSpeed = 1f;
@@ -88,6 +91,14 @@ public class StickerBehaviours : MonoBehaviour
                     GetComponent<BoxCollider>().isTrigger = true;
                     isSpawned = true;
                     transform.DOScale(1f, 0.05f);
+
+                    DialogueLua.SetVariable("ObjectToUse", this.stickerName);
+
+                    if (GameManager.instance.waitForPlayerInput)
+                    {
+                        FindObjectOfType<StandardUIContinueButtonFastForward>().OnFastForward();
+                        GameManager.instance.waitForPlayerInput = false;
+                    }
                 }
                 
                 
