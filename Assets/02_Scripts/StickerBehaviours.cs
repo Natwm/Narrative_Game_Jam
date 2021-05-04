@@ -17,19 +17,22 @@ public class StickerBehaviours : MonoBehaviour
     private bool isMoving = false;
     public bool isSpawned;
     public float fadetimer;
-    
+    public string stickerName;
     public bool hasbeengrabbed;
     bool hasfaded;
+
+   public KeyCode RotateLeft;
+   public KeyCode RotateRight;
     //Suce
     public bool IsMoving { get => isMoving; set => isMoving = value; }
 
-
+   
     // Start is called before the first frame update
     void Start()
     {
         SplashScreen = transform.GetChild(0).gameObject;
         timer = new Timer(fadetimer);
-       
+        
     }
 
     // Update is called once per frame
@@ -39,15 +42,18 @@ public class StickerBehaviours : MonoBehaviour
         {
             transform.DORotate((transform.eulerAngles + new Vector3(0, rotationSpeed * 10 * Input.mouseScrollDelta.y, 0)), 0.01f);
         }
-        if(isMoving && Input.GetKey(KeyCode.A)){
-            transform.DORotate((transform.rotation.eulerAngles + new Vector3(0, -rotationSpeed, 0)), 0.01f);
-        }
-
-        if (isMoving && Input.GetKey(KeyCode.E))
+        if (tag != "Maurice")
         {
-            transform.DORotate((transform.rotation.eulerAngles + new Vector3(0, rotationSpeed, 0)), 0.01f);
-        }
+            if (isMoving && Input.GetKey(RotateLeft))
+            {
+                transform.DORotate((transform.rotation.eulerAngles + new Vector3(0, -rotationSpeed, 0)), 0.01f);
+            }
 
+            if (isMoving && Input.GetKey(RotateRight))
+            {
+                transform.DORotate((transform.rotation.eulerAngles + new Vector3(0, rotationSpeed, 0)), 0.01f);
+            }
+        }
         if (IsMoving)
         {
             transform.DOScale(1.2f, 0);
@@ -69,19 +75,25 @@ public class StickerBehaviours : MonoBehaviour
         {
             if (!isSpawned)
             {
-                GameObject spawn = Instantiate(SplashSpawn, Vector3.zero, SplashSpawn.transform.rotation);
-                spawn.transform.parent = transform;
-                spawn.transform.localPosition = new Vector3(0,0,0.1f);
-                spawn.transform.DOScale(Random.Range(0.2f, splashScaleMax), spawnSpeed);
-                spawn.transform.DORotate(new Vector3(-90, 0, Random.Range(0, 360)), 0.001f);
-                spawn.GetComponent<SpriteRenderer>().DOFade(0, fadetimer);
-                timer.ResetPlay();
-                GetComponent<Rigidbody>().isKinematic = true;
-                GetComponent<BoxCollider>().isTrigger = true;
-                transform.DOScale(1f, 0.05f);
+                if (tag != "Maurice")
+                {
+                    GameObject spawn = Instantiate(SplashSpawn, Vector3.zero, SplashSpawn.transform.rotation);
+                    spawn.transform.parent = transform;
+                    spawn.transform.localPosition = new Vector3(0, 0, 0.1f);
+                    spawn.transform.DOScale(Random.Range(0.2f, splashScaleMax), spawnSpeed);
+                    spawn.transform.DORotate(new Vector3(-90, 0, Random.Range(0, 360)), 0.001f);
+                    spawn.GetComponent<SpriteRenderer>().DOFade(0, fadetimer);
+                    timer.ResetPlay();
+                    GetComponent<Rigidbody>().isKinematic = true;
+                    GetComponent<BoxCollider>().isTrigger = true;
+                    isSpawned = true;
+                    transform.DOScale(1f, 0.05f);
+                }
+                
+                
                 GetComponent<SpriteRenderer>().sortingOrder = move.layerindex;
                 move.layerindex++;
-                isSpawned = true;
+                
                 
             }
         }

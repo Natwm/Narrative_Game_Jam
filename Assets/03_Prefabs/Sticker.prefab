@@ -114,7 +114,9 @@ MonoBehaviour:
   splashScaleMax: 0.5
   isSpawned: 0
   fadetimer: 10
+  stickerName: 
   hasbeengrabbed: 0
+  grabSound: event:/SD/prend_stickers
 --- !u!212 &4866263848332603273
 SpriteRenderer:
   m_ObjectHideFlags: 0
