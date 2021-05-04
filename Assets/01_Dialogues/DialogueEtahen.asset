@@ -102,7 +102,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Initial Value
-      value: pizza
+      value: poire
       type: 0
       typeString: CustomFieldType_Text
     - title: Description
@@ -1061,7 +1061,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1387.3467
+        x: 1386.4293
         y: 900.61224
         width: 160
         height: 30
@@ -1123,7 +1123,7 @@ MonoBehaviour:
       - originConversationID: 2
         originDialogueID: 10
         destinationConversationID: 2
-        destinationDialogueID: 31
+        destinationDialogueID: 9
         isConnector: 0
         priority: 2
       conditionsString: Variable["ObjectToUse"] ~= "pizza"
@@ -1133,8 +1133,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1267.8573
-        y: 737.5289
+        x: 1048.2145
+        y: 788.4217
         width: 160
         height: 30
     - id: 11
@@ -2386,7 +2386,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: Continue()
         type: 0
         typeString: 
       conversationID: 2
@@ -2410,8 +2410,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1382.1975
-        y: 261.09885
+        x: 1379.1975
+        y: 262.09885
         width: 160
         height: 30
     - id: 30
@@ -2564,8 +2564,8 @@ MonoBehaviour:
         y: 847.4627
         width: 160
         height: 30
-    canvasScrollPosition: {x: 1120.1149, y: 450.43768}
-    canvasZoom: 1.3299996
+    canvasScrollPosition: {x: 1166.2642, y: 60.656555}
+    canvasZoom: 1.2699995
   syncInfo:
     syncActors: 0
     syncItems: 0
