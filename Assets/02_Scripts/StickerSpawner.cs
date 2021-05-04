@@ -12,10 +12,13 @@ public class StickerSpawner : MonoBehaviour
     public float safeRange;
     public GameObject collider_feuille;
     public GameObject collider_spawnfeuille;
+    public GameObject[] collidersDecors;
+    GameManager instance;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+        instance = FindObjectOfType<GameManager>();
     }
 
     public GameObject GetObjectbyName(string resourcename)
@@ -92,10 +95,24 @@ public class StickerSpawner : MonoBehaviour
         {
             GameObject newSticker = Instantiate(GetObjectbyName(arrayToPickFrom[i]));
             newSticker.GetComponent<StickerBehaviours>().stickerName = namestoload[i];
+            if (instance.currentLanguage == GameManager.Language.Francais)
+            {
+                newSticker.GetComponent<StickerBehaviours>().RotateLeft = KeyCode.A;
+                newSticker.GetComponent<StickerBehaviours>().RotateRight = KeyCode.E;
+            }
+            else
+            {
+                newSticker.GetComponent<StickerBehaviours>().RotateLeft = KeyCode.Q;
+                newSticker.GetComponent<StickerBehaviours>().RotateRight = KeyCode.E;
+            }
             newSticker.transform.SetPositionAndRotation(LoopPoints(), newSticker.transform.rotation);
         }
         collider_feuille.SetActive(true);
         collider_spawnfeuille.SetActive(false);
+        foreach (GameObject item in collidersDecors)
+        {
+            item.SetActive(false);
+        }
     }
 
     // Update is called once per frame

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Glue
   - NoSpawn
+  - Maurice
   layers:
   - Default
   - TransparentFX

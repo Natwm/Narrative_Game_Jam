@@ -13,8 +13,13 @@ public class GameManager : MonoBehaviour
     {
 
     }
-    #endregion
 
+    public enum Language
+    {
+        Francais,Anglais
+    }
+    #endregion
+    public Language currentLanguage;
     #region PARAM
     public static GameManager instance;
 

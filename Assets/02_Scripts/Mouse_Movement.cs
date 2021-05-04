@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using FMODUnity;
 
 public class Mouse_Movement : MonoBehaviour
 {
@@ -14,6 +15,13 @@ public class Mouse_Movement : MonoBehaviour
     Vector3 heldScale;
     public Texture2D[] hands;
    public int layerindex=1;
+
+    [FMODUnity.EventRef]
+    public string grabSound;
+    [FMODUnity.EventRef]
+    public string grabMauriceSound;
+    FMOD.Studio.EventInstance grabEvent;
+    
 
     Vector3 ScreenToWorld(Vector2 screenPos)
     {
@@ -32,6 +40,7 @@ public class Mouse_Movement : MonoBehaviour
         float t = -ray.origin.y / ray.direction.y;
         return ray.GetPoint(t);
     }
+    
 
     public void GetObject()
     {
@@ -42,7 +51,14 @@ public class Mouse_Movement : MonoBehaviour
         {
             if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Grab"))
             {
-                
+                if (hit.collider.tag == "Maurice")
+                {
+                    grabEvent = FMODUnity.RuntimeManager.CreateInstance(grabMauriceSound);
+                }
+                else
+                {
+                    grabEvent = FMODUnity.RuntimeManager.CreateInstance(grabSound);
+                }
                 if (hit.collider.gameObject.GetComponent<StickerBehaviours>().isSpawned == false)
                 {
                     held = true;
@@ -55,7 +71,7 @@ public class Mouse_Movement : MonoBehaviour
                         objectToMove.GetComponent<StickerBehaviours>().IsMoving = true;
                         objectToMove.GetComponent<StickerBehaviours>().move = this;
                         objectToMove.GetComponent<StickerBehaviours>().hasbeengrabbed = true;
-                        
+                        grabEvent.start();
                     }
                 }
 
@@ -66,7 +82,7 @@ public class Mouse_Movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+      
     }
 
     // Update is called once per frame
