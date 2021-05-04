@@ -24,24 +24,57 @@ public class StickerBehaviours : MonoBehaviour
     public bool hasbeengrabbed;
     bool hasfaded;
 
-   public KeyCode RotateLeft;
-   public KeyCode RotateRight;
+    public KeyCode RotateLeft;
+    public KeyCode RotateRight;
+
+    public Sprite[] mauriceSprites;
     //Suce
     public bool IsMoving { get => isMoving; set => isMoving = value; }
 
-   
+    [FMODUnity.EventRef]
+    public string dropMauriceSound;
+
+    [FMODUnity.EventRef]
+    public string dropSound;
+
+    FMOD.Studio.EventInstance dropEvent;
     // Start is called before the first frame update
+
+    
     void Start()
     {
         SplashScreen = transform.GetChild(0).gameObject;
         timer = new Timer(fadetimer);
-        
+        if (tag == "Maurice")
+        {
+            dropEvent = FMODUnity.RuntimeManager.CreateInstance(dropMauriceSound);
+        }
+        else
+        {
+            dropEvent = FMODUnity.RuntimeManager.CreateInstance(dropSound);
+        }
+    }
+
+    public void SwapSprite(Sprite spriteToChange)
+    {
+        GetComponent<SpriteRenderer>().sprite = spriteToChange;
+        transform.DOScale(0.7f, 0f);
+        transform.DOScale(0.5f, 0.5f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.mouseScrollDelta.y != 0 && isMoving)
+        if (Input.GetKeyUp(KeyCode.O))
+        {
+            SwapSprite(mauriceSprites[0]);
+        }
+        if (Input.GetKeyUp(KeyCode.I))
+        {
+            SwapSprite(mauriceSprites[1]);
+        }
+
+        if (Input.mouseScrollDelta.y != 0 && isMoving && tag != "Maurice")
         {
             transform.DORotate((transform.eulerAngles + new Vector3(0, rotationSpeed * 10 * Input.mouseScrollDelta.y, 0)), 0.01f);
         }
@@ -59,7 +92,15 @@ public class StickerBehaviours : MonoBehaviour
         }
         if (IsMoving)
         {
-            transform.DOScale(1.2f, 0);
+            if (tag=="Maurice")
+            {
+                transform.DOScale(0.6f, 0);
+            }
+            else
+            {
+                transform.DOScale(1.2f, 0);
+            }
+            
         }
         if (timer.IsFinished())
         {

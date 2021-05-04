@@ -116,7 +116,10 @@ MonoBehaviour:
   fadetimer: 10
   stickerName: 
   hasbeengrabbed: 0
-  grabSound: event:/SD/prend_stickers
+  RotateLeft: 0
+  RotateRight: 0
+  dropMauriceSound: event:/SD/Drop Maurice
+  dropSound: event:/SD/Drop Maurice
 --- !u!212 &4866263848332603273
 SpriteRenderer:
   m_ObjectHideFlags: 0
