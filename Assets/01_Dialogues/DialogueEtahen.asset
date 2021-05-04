@@ -102,7 +102,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Initial Value
-      value: pizza
+      value: poire
       type: 0
       typeString: CustomFieldType_Text
     - title: Description
@@ -482,8 +482,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1382.1975
-        y: 211.09885
+        x: 1868.6484
+        y: 322.70264
         width: 160
         height: 30
     - id: 1
@@ -559,8 +559,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1382.1975
-        y: 311.09885
+        x: 1868.6484
+        y: 422.70264
         width: 160
         height: 30
     - id: 2
@@ -631,8 +631,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1382.1975
-        y: 361.09882
+        x: 1868.6484
+        y: 472.70264
         width: 160
         height: 30
     - id: 3
@@ -702,8 +702,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1382.1975
-        y: 411.0988
+        x: 1868.6484
+        y: 522.70264
         width: 160
         height: 30
     - id: 4
@@ -773,8 +773,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1382.1975
-        y: 461.09897
+        x: 1868.6484
+        y: 572.7027
         width: 160
         height: 30
     - id: 5
@@ -846,8 +846,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1382.1975
-        y: 511.09903
+        x: 1868.6484
+        y: 622.7027
         width: 160
         height: 30
     - id: 6
@@ -917,8 +917,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1382.1975
-        y: 560.3116
+        x: 1868.6484
+        y: 672.7027
         width: 160
         height: 30
     - id: 7
@@ -990,8 +990,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1382.1975
-        y: 611.0991
+        x: 1868.6484
+        y: 722.7027
         width: 160
         height: 30
     - id: 9
@@ -1061,8 +1061,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1387.3467
-        y: 900.61224
+        x: 1868.6484
+        y: 872.7027
         width: 160
         height: 30
     - id: 10
@@ -1123,7 +1123,7 @@ MonoBehaviour:
       - originConversationID: 2
         originDialogueID: 10
         destinationConversationID: 2
-        destinationDialogueID: 31
+        destinationDialogueID: 9
         isConnector: 0
         priority: 2
       conditionsString: Variable["ObjectToUse"] ~= "pizza"
@@ -1133,8 +1133,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1267.8573
-        y: 737.5289
+        x: 1778.6484
+        y: 822.7027
         width: 160
         height: 30
     - id: 11
@@ -1204,8 +1204,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1387.3467
-        y: 950.61224
+        x: 1868.6484
+        y: 922.70276
         width: 160
         height: 30
     - id: 12
@@ -1275,8 +1275,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1387.3467
-        y: 1000.6122
+        x: 1868.6484
+        y: 972.7028
         width: 160
         height: 30
     - id: 13
@@ -1347,8 +1347,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1387.3467
-        y: 1050.6122
+        x: 1868.6484
+        y: 1022.7028
         width: 160
         height: 30
     - id: 14
@@ -1418,8 +1418,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1387.3467
-        y: 1100.6112
+        x: 1868.6484
+        y: 1072.7029
         width: 160
         height: 30
     - id: 15
@@ -1489,8 +1489,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1387.3467
-        y: 1150.611
+        x: 1868.6484
+        y: 1122.7029
         width: 160
         height: 30
     - id: 16
@@ -1560,8 +1560,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1387.3467
-        y: 1200.611
+        x: 1868.6484
+        y: 1172.7029
         width: 160
         height: 30
     - id: 17
@@ -1631,8 +1631,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1387.3467
-        y: 1250.611
+        x: 1868.6484
+        y: 1222.7029
         width: 160
         height: 30
     - id: 18
@@ -1702,8 +1702,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1387.3467
-        y: 1300.611
+        x: 1868.6484
+        y: 1272.7029
         width: 160
         height: 30
     - id: 19
@@ -1773,8 +1773,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1387.3467
-        y: 1350.611
+        x: 1868.6484
+        y: 1322.7029
         width: 160
         height: 30
     - id: 20
@@ -1844,8 +1844,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1387.3467
-        y: 1400.611
+        x: 1868.6484
+        y: 1372.7029
         width: 160
         height: 30
     - id: 21
@@ -1916,8 +1916,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1387.3467
-        y: 1450.611
+        x: 1868.6484
+        y: 1422.7029
         width: 160
         height: 30
     - id: 22
@@ -1988,8 +1988,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1387.3467
-        y: 1500.611
+        x: 1868.6484
+        y: 1472.7029
         width: 160
         height: 30
     - id: 23
@@ -2059,8 +2059,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1387.3467
-        y: 1550.611
+        x: 1868.6484
+        y: 1522.7029
         width: 160
         height: 30
     - id: 24
@@ -2131,8 +2131,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1387.3467
-        y: 1600.611
+        x: 1868.6484
+        y: 1572.7029
         width: 160
         height: 30
     - id: 25
@@ -2203,8 +2203,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1387.3467
-        y: 1650.611
+        x: 1868.6484
+        y: 1622.7029
         width: 160
         height: 30
     - id: 27
@@ -2274,8 +2274,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1387.3467
-        y: 1700.611
+        x: 1868.6484
+        y: 1672.7029
         width: 160
         height: 30
     - id: 28
@@ -2339,8 +2339,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1387.3467
-        y: 1750.611
+        x: 1868.6484
+        y: 1722.7029
         width: 160
         height: 30
     - id: 29
@@ -2386,7 +2386,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: Continue()
         type: 0
         typeString: 
       conversationID: 2
@@ -2410,8 +2410,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1382.1975
-        y: 261.09885
+        x: 1868.6484
+        y: 372.70264
         width: 160
         height: 30
     - id: 30
@@ -2487,8 +2487,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1382.1975
-        y: 661.0991
+        x: 1868.6484
+        y: 772.7027
         width: 160
         height: 30
     - id: 31
@@ -2560,12 +2560,127 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1385.6064
-        y: 847.4627
+        x: 1958.6484
+        y: 822.7027
         width: 160
         height: 30
-    canvasScrollPosition: {x: 1120.1149, y: 450.43768}
-    canvasZoom: 1.3299996
+    canvasScrollPosition: {x: 1225.299, y: 192.7841}
+    canvasZoom: 1.3599995
+  - id: 3
+    fields:
+    - title: Title
+      value: Entretient2
+      type: 0
+      typeString: 
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+    - title: Actor
+      value: 1
+      type: 5
+      typeString: CustomFieldType_Actor
+    - title: Conversant
+      value: 2
+      type: 5
+      typeString: CustomFieldType_Actor
+    overrideSettings:
+      useOverrides: 0
+      overrideSubtitleSettings: 0
+      showNPCSubtitlesDuringLine: 1
+      showNPCSubtitlesWithResponses: 1
+      showPCSubtitlesDuringLine: 0
+      skipPCSubtitleAfterResponseMenu: 0
+      subtitleCharsPerSecond: 30
+      minSubtitleSeconds: 2
+      continueButton: 0
+      overrideSequenceSettings: 0
+      defaultSequence: 
+      defaultPlayerSequence: 
+      defaultResponseMenuSequence: 
+      overrideInputSettings: 0
+      alwaysForceResponseMenu: 1
+      includeInvalidEntries: 0
+      responseTimeout: 0
+      cancelSubtitle:
+        key: 27
+        buttonName: 
+      cancelConversation:
+        key: 27
+        buttonName: 
+    nodeColor: 
+    dialogueEntries:
+    - id: 0
+      fields:
+      - title: Title
+        value: START
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: 
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 581
+        y: 57
+        width: 160
+        height: 30
+    canvasScrollPosition: {x: 42.216743, y: 0}
+    canvasZoom: 1.1799998
   syncInfo:
     syncActors: 0
     syncItems: 0
@@ -2579,7 +2694,8 @@ MonoBehaviour:
     Item","value":"True","type":2,"typeString":"CustomFieldType_Boolean"}],"questFields":[{"title":"Name","value":"","type":0,"typeString":""},{"title":"Pictures","value":"[]","type":3,"typeString":"CustomFieldType_Files"},{"title":"Description","value":"","type":0,"typeString":""},{"title":"Success
     Description","value":"","type":0,"typeString":""},{"title":"Failure Description","value":"","type":0,"typeString":""},{"title":"State","value":"unassigned","type":0,"typeString":""},{"title":"Is
     Item","value":"False","type":2,"typeString":"CustomFieldType_Boolean"}],"locationFields":[{"title":"Name","value":"","type":0,"typeString":""},{"title":"Pictures","value":"[]","type":3,"typeString":"CustomFieldType_Files"},{"title":"Description","value":"","type":0,"typeString":""}],"variableFields":[{"title":"Name","value":"","type":0,"typeString":""},{"title":"Initial
-    Value","value":"","type":0,"typeString":""},{"title":"Description","value":"","type":0,"typeString":""}],"conversationFields":[{"title":"Title","value":"","type":0,"typeString":""},{"title":"Pictures","value":"[]","type":3,"typeString":"CustomFieldType_Files"},{"title":"Description","value":"","type":0,"typeString":""},{"title":"Actor","value":"0","type":5,"typeString":"CustomFieldType_Actor"},{"title":"Conversant","value":"0","type":5,"typeString":"CustomFieldType_Actor"}],"dialogueEntryFields":[{"title":"Title","value":"","type":0,"typeString":""},{"title":"Pictures","value":"[]","type":3,"typeString":"CustomFieldType_Files"},{"title":"Description","value":"","type":0,"typeString":""},{"title":"Actor","value":"","type":5,"typeString":"CustomFieldType_Actor"},{"title":"Conversant","value":"","type":5,"typeString":"CustomFieldType_Actor"},{"title":"Menu
-    Text","value":"","type":0,"typeString":""},{"title":"Dialogue Text","value":"","type":0,"typeString":""},{"title":"Parenthetical","value":"","type":0,"typeString":""},{"title":"Audio
+    Value","value":"","type":0,"typeString":""},{"title":"Description","value":"","type":0,"typeString":""}],"conversationFields":[{"title":"Title","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Pictures","value":"[]","type":3,"typeString":"CustomFieldType_Files"},{"title":"Description","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Actor","value":"0","type":5,"typeString":"CustomFieldType_Actor"},{"title":"Conversant","value":"0","type":5,"typeString":"CustomFieldType_Actor"},{"title":"FR","value":"","type":4,"typeString":"CustomFieldType_Localization"},{"title":"UK","value":"","type":0,"typeString":"CustomFieldType_Text"}],"dialogueEntryFields":[{"title":"Title","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Pictures","value":"[]","type":3,"typeString":"CustomFieldType_Files"},{"title":"Description","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Actor","value":"","type":5,"typeString":"CustomFieldType_Actor"},{"title":"Conversant","value":"","type":5,"typeString":"CustomFieldType_Actor"},{"title":"Menu
+    Text","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Dialogue
+    Text","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Parenthetical","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Audio
     Files","value":"[]","type":3,"typeString":"CustomFieldType_Files"},{"title":"Video
-    File","value":"","type":0,"typeString":""},{"title":"Sequence","value":"","type":0,"typeString":""}],"actorPrimaryFieldTitles":[],"itemPrimaryFieldTitles":[],"questPrimaryFieldTitles":[],"locationPrimaryFieldTitles":[],"variablePrimaryFieldTitles":[],"conversationPrimaryFieldTitles":[],"dialogueEntryPrimaryFieldTitles":[],"npcLineColor":{"r":1.0,"g":0.0,"b":0.0,"a":1.0},"pcLineColor":{"r":0.0,"g":0.0,"b":1.0,"a":1.0},"repeatLineColor":{"r":0.5,"g":0.5,"b":0.5,"a":1.0}}'
+    File","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Sequence","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"FR","value":"","type":4,"typeString":"CustomFieldType_Localization"},{"title":"UK","value":"","type":4,"typeString":"CustomFieldType_Localization"}],"actorPrimaryFieldTitles":[],"itemPrimaryFieldTitles":[],"questPrimaryFieldTitles":[],"locationPrimaryFieldTitles":[],"variablePrimaryFieldTitles":[],"conversationPrimaryFieldTitles":[],"dialogueEntryPrimaryFieldTitles":[],"npcLineColor":{"r":1.0,"g":0.0,"b":0.0,"a":1.0},"pcLineColor":{"r":0.0,"g":0.0,"b":1.0,"a":1.0},"repeatLineColor":{"r":0.5,"g":0.5,"b":0.5,"a":1.0}}'
