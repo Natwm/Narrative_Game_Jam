@@ -14,11 +14,12 @@ public class StickerSpawner : MonoBehaviour
     public GameObject collider_spawnfeuille;
     public GameObject[] collidersDecors;
     GameManager instance;
-    
+    SceneParser sceneParser;
     // Start is called before the first frame update
     void Start()
     {
         instance = FindObjectOfType<GameManager>();
+        sceneParser = GetComponent<SceneParser>();
     }
 
     public GameObject GetObjectbyName(string resourcename)
@@ -88,25 +89,40 @@ public class StickerSpawner : MonoBehaviour
         }
     }
 
-    public void SpawnItem(string[] arrayToPickFrom)
+
+    //TO DO
+    //-Add localisation and object mention
+    public void SpawnItem(SceneItem[] arrayToPickFrom)
     {
         collider_feuille.SetActive(false);
         collider_spawnfeuille.SetActive(true);
-        for (int i = 0; i < arrayToPickFrom.Length; i++)
+        for (int i = 1; i < arrayToPickFrom.Length; i++)
         {
-            GameObject newSticker = Instantiate(GetObjectbyName(arrayToPickFrom[i]));
-            newSticker.GetComponent<StickerBehaviours>().stickerName = namestoload[i];
-            if (instance.currentLanguage == GameManager.Language.Francais)
+            GameObject newSticker;
+            if (arrayToPickFrom[i].name != "")
             {
-                newSticker.GetComponent<StickerBehaviours>().RotateLeft = KeyCode.A;
-                newSticker.GetComponent<StickerBehaviours>().RotateRight = KeyCode.E;
+                int iteration = Random.Range(1, arrayToPickFrom[i].iterationNumber+1);
+                for (int n = 0; n < iteration; n++)
+                {
+                    newSticker = Instantiate(GetObjectbyName(arrayToPickFrom[i].name));
+                    newSticker.GetComponent<StickerBehaviours>().stickerName = arrayToPickFrom[i].name;
+                    if (instance.currentLanguage == GameManager.Language.Francais)
+                    {
+                        newSticker.GetComponent<StickerBehaviours>().RotateLeft = KeyCode.A;
+                        newSticker.GetComponent<StickerBehaviours>().RotateRight = KeyCode.E;
+                    }
+                    else
+                    {
+                        newSticker.GetComponent<StickerBehaviours>().RotateLeft = KeyCode.Q;
+                        newSticker.GetComponent<StickerBehaviours>().RotateRight = KeyCode.E;
+                    }
+                    newSticker.transform.SetPositionAndRotation(LoopPoints(), newSticker.transform.rotation);
+
+                }
+                
             }
-            else
-            {
-                newSticker.GetComponent<StickerBehaviours>().RotateLeft = KeyCode.Q;
-                newSticker.GetComponent<StickerBehaviours>().RotateRight = KeyCode.E;
-            }
-            newSticker.transform.SetPositionAndRotation(LoopPoints(), newSticker.transform.rotation);
+            
+            
         }
         collider_feuille.SetActive(true);
         collider_spawnfeuille.SetActive(false);
@@ -121,7 +137,23 @@ public class StickerSpawner : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.Space))
         {
-            SpawnItem(namestoload);
+            SpawnItem(sceneParser.ParseScene(instance.CurrentScene));
         }
     }
+
+    // To Do
+    // Index Scene
+    // CSV by scene
+    // Mandatory Names - Optional by Scene - Max Doubles.
+    // Get non scene Related Array
+    //DISTRIBUTION?
+    // 
+    // Parse Csv
+    // Get Mandatory Names
+    // 
+    // Read Array
+    // GENERATION
+    // FIRST>All OBLIGATORY ITEMS
+    // SECOND> SECONDARY ITEMS > Get Max Iteration Number > Rand Iteration
+    // LAST> FREE ITEMS
 }

@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 7308133449116887914}
   - component: {fileID: 4866263848332603273}
   m_Layer: 8
-  m_Name: sticker_angry
+  m_Name: sticker_screaming
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,8 +76,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.37364733, y: 0.2655657, z: 0.05}
-  m_Center: {x: 0.0010133982, y: 0.007343143, z: 0.012890339}
+  m_Size: {x: 0.36911786, y: 0.2550335, z: 0.05}
+  m_Center: {x: -0.012619942, y: 0.007756561, z: 0.012890339}
 --- !u!54 &7987006625802660922
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -114,7 +114,13 @@ MonoBehaviour:
   splashScaleMax: 0.1
   isSpawned: 0
   fadetimer: 10
+  stickerName: 
   hasbeengrabbed: 0
+  RotateLeft: 0
+  RotateRight: 0
+  mauriceSprites: []
+  dropMauriceSound: 
+  dropSound: event:/SD/Drop Maurice
 --- !u!212 &4866263848332603273
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -154,7 +160,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 6895b763454c96246a92bc7844c1ea88, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9f3d51eee3a86c547850c028f46c1bf7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

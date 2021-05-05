@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 7308133449116887914}
   - component: {fileID: 4866263848332603273}
   m_Layer: 8
-  m_Name: sticker_magicsong 1
+  m_Name: sticker_mum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -114,7 +114,13 @@ MonoBehaviour:
   splashScaleMax: 0.1
   isSpawned: 0
   fadetimer: 10
+  stickerName: 
   hasbeengrabbed: 0
+  RotateLeft: 0
+  RotateRight: 0
+  mauriceSprites: []
+  dropMauriceSound: 
+  dropSound: event:/SD/Drop Maurice
 --- !u!212 &4866263848332603273
 SpriteRenderer:
   m_ObjectHideFlags: 0

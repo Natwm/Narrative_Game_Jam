@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     public Language currentLanguage;
     #region PARAM
     public static GameManager instance;
+    public int CurrentScene;
 
     [FMODUnity.EventRef]
     public string musique;
