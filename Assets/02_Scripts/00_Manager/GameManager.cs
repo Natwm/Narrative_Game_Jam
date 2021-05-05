@@ -24,6 +24,10 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public int CurrentScene;
 
+    public bool isEnd = false;
+
+    private GameObject maurice;
+
     [FMODUnity.EventRef]
     public string musique;
 
@@ -32,6 +36,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private List<string> DrawingNeeded = new List<string>();
 
     public bool waitForPlayerInput = false;
+
+    public GameObject Maurice { get => maurice; set => maurice = value; }
 
     #endregion
 
@@ -63,6 +69,13 @@ public class GameManager : MonoBehaviour
 
 
     #endregion
+
+    public void ItsEnd()
+    {
+        GameManager.instance.isEnd = true;
+
+        Maurice.GetComponent<StickerBehaviours>().ItsEnd();
+    }
 
     public void AddItemNeeded(string itemName) // ajouter le script de l'objet dragable
     {
@@ -177,6 +190,7 @@ public class GameManager : MonoBehaviour
         Lua.RegisterFunction("AddItem", this, SymbolExtensions.GetMethodInfo(() => AddItemNeeded(string.Empty)));
         Lua.RegisterFunction("ResetItem", this, SymbolExtensions.GetMethodInfo(() => ResetItemNeeded()));
         Lua.RegisterFunction("waitForPlayerInput", this, SymbolExtensions.GetMethodInfo(() => ChangeWaitForInput()));
+        Lua.RegisterFunction("WaitForMaurice", this, SymbolExtensions.GetMethodInfo(() => ItsEnd()));
     }
 
     void OnDisable()
@@ -190,6 +204,7 @@ public class GameManager : MonoBehaviour
         Lua.UnregisterFunction("AddItem");
         Lua.UnregisterFunction("ResetItem");
         Lua.UnregisterFunction("waitForPlayerInput");
+        Lua.UnregisterFunction("WaitForMaurice");
     }
 
     #endregion

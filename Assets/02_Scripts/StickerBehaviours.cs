@@ -28,6 +28,11 @@ public class StickerBehaviours : MonoBehaviour
     public KeyCode RotateRight;
 
     public Sprite[] mauriceSprites;
+    
+
+    public bool isMaurice;
+
+
     //Suce
     public bool IsMoving { get => isMoving; set => isMoving = value; }
 
@@ -47,12 +52,19 @@ public class StickerBehaviours : MonoBehaviour
         timer = new Timer(fadetimer);
         if (tag == "Maurice")
         {
+            GameManager.instance.Maurice = this.gameObject;
             dropEvent = FMODUnity.RuntimeManager.CreateInstance(dropMauriceSound);
         }
         else
         {
             dropEvent = FMODUnity.RuntimeManager.CreateInstance(dropSound);
         }
+    }
+
+    public void ItsEnd()
+    {
+        if(tag == "Maurice")
+            SwapSprite(mauriceSprites[1]);
     }
 
     public void SwapSprite(Sprite spriteToChange)
@@ -140,14 +152,15 @@ public class StickerBehaviours : MonoBehaviour
                         FindObjectOfType<StandardUIContinueButtonFastForward>().OnFastForward();
                         GameManager.instance.waitForPlayerInput = false;
                     }
-                }
-                
-                
+                }             
                 GetComponent<SpriteRenderer>().sortingOrder = move.layerindex;
-                move.layerindex++;
-                
-                
+                move.layerindex++;                
             }
+        }
+        else if (other.gameObject.CompareTag("End") && tag == "Maurice" && GameManager.instance.isEnd && !isMoving && hasbeengrabbed)
+        {
+            print("end");
+            // lancer le niveau suivant
         }
     }
 
