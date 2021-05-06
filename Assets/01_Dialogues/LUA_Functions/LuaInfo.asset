@@ -41,3 +41,6 @@ MonoBehaviour:
   - functionName: WaitForMaurice
     parameters: 
     returnValue: 0
+  - functionName: SpawnItem
+    parameters: 
+    returnValue: 0

@@ -12,6 +12,21 @@ public class DebugFonc : MonoBehaviour
         {
             SceneManager.LoadScene(0);
         }
-        
+        if (Input.GetKeyUp(KeyCode.Alpha1))
+        {
+            GameManager.instance.DadMusique();
+        }
+        if (Input.GetKeyUp(KeyCode.Alpha2))
+        {
+            GameManager.instance.EthanMusique();
+        }
+        if (Input.GetKeyUp(KeyCode.Alpha3))
+        {
+            GameManager.instance.HinaMusique();
+        }
+        if (Input.GetKeyUp(KeyCode.Alpha4))
+        {
+            GameManager.instance.MotherMusique();
+        }
     }
 }
