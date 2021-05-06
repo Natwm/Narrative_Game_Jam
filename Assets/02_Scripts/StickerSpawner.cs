@@ -20,6 +20,7 @@ public class StickerSpawner : MonoBehaviour
     {
         instance = FindObjectOfType<GameManager>();
         sceneParser = GetComponent<SceneParser>();
+
     }
 
     public GameObject GetObjectbyName(string resourcename)
@@ -132,12 +133,17 @@ public class StickerSpawner : MonoBehaviour
         }
     }
 
+    public void JESUISUNSCHLAGUEMAISJESPAWNDESOBJETS()
+    {
+        SpawnItem(sceneParser.ParseScene(instance.CurrentScene));
+    }
+
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyUp(KeyCode.Space))
         {
-            SpawnItem(sceneParser.ParseScene(instance.CurrentScene));
+            
         }
     }
 

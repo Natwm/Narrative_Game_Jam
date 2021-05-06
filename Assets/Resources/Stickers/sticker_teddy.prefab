@@ -119,8 +119,9 @@ MonoBehaviour:
   RotateLeft: 0
   RotateRight: 0
   mauriceSprites: []
+  isMaurice: 0
   dropMauriceSound: 
-  dropSound: event:/SD/Drop Maurice
+  dropSound: event:/SD/drop sticker sur table
 --- !u!212 &4866263848332603273
 SpriteRenderer:
   m_ObjectHideFlags: 0

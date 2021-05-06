@@ -10,6 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5994691075435785568}
   - component: {fileID: 4730806526893610811}
+  - component: {fileID: 1446152132}
+  - component: {fileID: 1446152134}
+  - component: {fileID: 1446152136}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -41,5 +44,61 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2720e75b87521054a98fa7e519f5ceda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLanguage: 0
+  CurrentScene: 1
+  isEnd: 0
+  musique: event:/MUSIC/MUSIC
+  DrawingNeeded:
+  - Biere
+  - "S\xF6sig"
+  - Poil
+  waitForPlayerInput: 0
+--- !u!114 &1446152132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2886261551616439762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/MUSIC/MUSIC_AMBIANT
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!114 &1446152134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2886261551616439762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbb12d9b49db0034d820753a18a743c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1446152136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2886261551616439762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c8d3ff0c4ce234aaca24411f8515aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

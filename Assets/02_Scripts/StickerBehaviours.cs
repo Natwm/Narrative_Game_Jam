@@ -164,7 +164,10 @@ public class StickerBehaviours : MonoBehaviour
         }
     }
 
-    
+    public void PlayDrop()
+    {
+        dropEvent.start();
+    }
 
     /*private void OnCollisionEnter(Collision collision)
     {

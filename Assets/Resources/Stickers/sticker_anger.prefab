@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 7308133449116887914}
   - component: {fileID: 4866263848332603273}
   m_Layer: 8
-  m_Name: sticker_angry
+  m_Name: sticker_anger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -119,8 +119,9 @@ MonoBehaviour:
   RotateLeft: 0
   RotateRight: 0
   mauriceSprites: []
+  isMaurice: 0
   dropMauriceSound: 
-  dropSound: event:/SD/Drop Maurice
+  dropSound: event:/SD/drop sticker sur table
 --- !u!212 &4866263848332603273
 SpriteRenderer:
   m_ObjectHideFlags: 0

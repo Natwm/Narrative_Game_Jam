@@ -53,7 +53,8 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         soundEvent = FMODUnity.RuntimeManager.CreateInstance(musique);
-        soundEvent.start();
+        //soundEvent.start();
+        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame

@@ -105,6 +105,7 @@ public class Mouse_Movement : MonoBehaviour
                 objectToMove.GetComponent<Rigidbody>().isKinematic = false;
                 objectToMove.GetComponent<BoxCollider>().isTrigger = false;
                 objectToMove.GetComponent<StickerBehaviours>().IsMoving = false;
+                objectToMove.GetComponent<StickerBehaviours>().PlayDrop();
                 if (objectToMove.tag=="Maurice")
                 {
                     objectToMove.transform.DOScale(0.5f, 0.05f);
