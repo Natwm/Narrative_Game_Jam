@@ -29,11 +29,15 @@ public class MainMenu : MonoBehaviour
 
     FMOD.Studio.EventInstance EventMenu;
 
+    public Text PressStart;
+
     public void PetiteTransitionPasPiquéeDesHannetons()
     {
+        
         EventMenu = FMODUnity.RuntimeManager.CreateInstance(MusicMenu); 
         ParentImage.rectTransform.DOMove(endPoint.position,5f);
         ParentImage.DOFade(255,3000);
+        PressStart.DOFade(0, 1f);
         foreach (Button item in fadeUi)
         {
             item.image.DOFade(255,3000);
@@ -140,7 +144,7 @@ public class MainMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (Input.anyKey)
         {
             PetiteTransitionPasPiquéeDesHannetons();
         }
