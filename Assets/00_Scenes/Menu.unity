@@ -290,6 +290,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 341481902}
   m_CullTransparentMesh: 0
+--- !u!114 &441149113 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 304673530043595415, guid: dea1321d9b6eb334d84cb12f34891cc9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1967248243}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &621714438
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -297,6 +309,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1446152132, guid: aa8374a30a2a3634aadc79370939765f, type: 3}
+      propertyPath: PlayEvent
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2886261551616439762, guid: aa8374a30a2a3634aadc79370939765f,
         type: 3}
       propertyPath: m_Name
@@ -550,6 +566,11 @@ PrefabInstance:
       propertyPath: CDELAMERDE.a
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7826652354620516850, guid: 58ac37417e60e534f91138088a3e6f70,
+        type: 3}
+      propertyPath: MusicAmbiant
+      value: event:/MUSIC/MUSIC_AMBIANT
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
 --- !u!1 &842284090
@@ -660,6 +681,9 @@ MonoBehaviour:
   soundsprite:
   - {fileID: 21300000, guid: a0910896b8728a94da44484982bfed96, type: 3}
   - {fileID: 21300000, guid: b0857be767fdeee4e90d506ddf4e7860, type: 3}
+  startText: {fileID: 1959018446}
+  creditText: {fileID: 441149113}
+  exitText: {fileID: 940832444}
 --- !u!4 &875525604
 Transform:
   m_ObjectHideFlags: 0
@@ -697,6 +721,18 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 0
   OverrideMaxDistance: 0
+--- !u!114 &940832444 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 304673530043595415, guid: dea1321d9b6eb334d84cb12f34891cc9,
+    type: 3}
+  m_PrefabInstance: {fileID: 2125571518}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &973026123 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 304673531385541508, guid: dea1321d9b6eb334d84cb12f34891cc9,
@@ -5701,6 +5737,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CreditImage: {fileID: 0}
   soundsprite: []
+  startText: {fileID: 0}
+  creditText: {fileID: 0}
+  exitText: {fileID: 0}
 --- !u!1001 &1295869857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11162,6 +11201,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1747654941}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1959018446 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 304673530043595415, guid: dea1321d9b6eb334d84cb12f34891cc9,
+    type: 3}
+  m_PrefabInstance: {fileID: 304673530592129608}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1967248243
 PrefabInstance:
   m_ObjectHideFlags: 0

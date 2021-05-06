@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
     [FMODUnity.EventRef]
     public string musique;
 
-    FMOD.Studio.EventInstance soundEvent;
+    public FMOD.Studio.EventInstance soundEvent;
 
     [SerializeField] private List<string> DrawingNeeded = new List<string>();
 

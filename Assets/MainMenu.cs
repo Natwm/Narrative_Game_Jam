@@ -11,8 +11,9 @@ public class MainMenu : MonoBehaviour
     public Image CreditImage;
     public Sprite[] soundsprite;
     bool soundState;
-    
-
+    public Text startText;
+    public Text creditText;
+    public Text exitText;
 
     //Launch Scene
     public void LaunchGame()
@@ -56,10 +57,16 @@ public class MainMenu : MonoBehaviour
         if (language == "francais")
         {
             DialogueManager.instance.SetLanguage("FR");
+            startText.text = "Jouer";
+            creditText.text = "Crédits";
+            exitText.text = "Quitter";
         }
         else
         {
             DialogueManager.instance.SetLanguage("UK");
+            startText.text = "Play";
+            creditText.text = "Credits";
+            exitText.text = "Exit";
         }
     }
 
