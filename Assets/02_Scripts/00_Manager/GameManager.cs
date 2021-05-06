@@ -36,6 +36,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private List<string> DrawingNeeded = new List<string>();
 
     public bool waitForPlayerInput = false;
+    public int amountOfSticker = 0;
+    public int maxAmountOfSticker = 0;
 
     public GameObject Maurice { get => maurice; set => maurice = value; }
 
@@ -70,6 +72,14 @@ public class GameManager : MonoBehaviour
 
 
     #endregion
+
+    public void SpawnAObject(string Object)
+    {
+        if (amountOfSticker >= maxAmountOfSticker)
+        {
+            FindObjectOfType<StickerSpawner>().SpawnAObject(Object);
+        }
+    }
 
     public void ItsEnd()
     {

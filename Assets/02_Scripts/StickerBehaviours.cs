@@ -152,6 +152,9 @@ public class StickerBehaviours : MonoBehaviour
                         FindObjectOfType<StandardUIContinueButtonFastForward>().OnFastForward();
                         GameManager.instance.waitForPlayerInput = false;
                     }
+
+                    GameManager.instance.amountOfSticker++;
+
                 }             
                 GetComponent<SpriteRenderer>().sortingOrder = move.layerindex;
                 move.layerindex++;                

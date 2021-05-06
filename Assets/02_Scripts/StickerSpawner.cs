@@ -136,6 +136,7 @@ public class StickerSpawner : MonoBehaviour
             item.SetActive(false);
         }
         GameManager.instance.CurrentScene++;
+        GameManager.instance.maxAmountOfSticker = FindObjectsOfType<StickerBehaviours>().Length - 1;
     }
 
     public void JESUISUNSCHLAGUEMAISJESPAWNDESOBJETS()
@@ -152,6 +153,13 @@ public class StickerSpawner : MonoBehaviour
         }
     }
 
+    public void SpawnAObject(string a)
+    {
+        GameObject newSticker;
+        newSticker = Instantiate(GetObjectbyName(a));
+        newSticker.GetComponent<StickerBehaviours>().stickerName = a;
+        newSticker.transform.SetPositionAndRotation(new Vector3(2.16f, .10f, -2.73f), newSticker.transform.rotation);
+    }
 
     void OnEnable()
     {
