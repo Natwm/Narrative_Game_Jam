@@ -302,6 +302,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 4730806526893610811, guid: aa8374a30a2a3634aadc79370939765f,
+        type: 3}
+      propertyPath: CurrentScene
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5994691075435785568, guid: aa8374a30a2a3634aadc79370939765f,
         type: 3}
       propertyPath: m_RootOrder

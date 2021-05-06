@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using PixelCrushers;
+using PixelCrushers.DialogueSystem;
 using UnityEngine.UI;
 using DG.Tweening;
 
@@ -11,6 +11,7 @@ public class Scene_Gestion : MonoBehaviour
     public Image BlackFade;
     public Color Dotween;
     public Color CDELAMERDE;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -19,25 +20,39 @@ public class Scene_Gestion : MonoBehaviour
 
     public void InitializeScene()
     {
-        Scene currentScene = SceneManager.GetActiveScene();
-        int sceneNumber = int.Parse(currentScene.name);
-        GameManager.instance.CurrentScene = sceneNumber;
-        FindObjectOfType<PixelCrushers.DialogueSystem.ConversationTrigger>().conversation = "Scène " + currentScene.name;
-        FindObjectOfType<StickerSpawner>().JESUISUNSCHLAGUEMAISJESPAWNDESOBJETS();
+        
+        GameManager.instance.CurrentScene ++;
+        //FindObjectOfType<StickerSpawner>().JESUISUNSCHLAGUEMAISJESPAWNDESOBJETS();
+       
     }
 
+
+    //LANCER LE FADE TO BLACK
     public void SceneTransition()
     {       
         BlackFade.gameObject.SetActive(true);
         BlackFade.DOColor(CDELAMERDE,2);
-        Invoke("", 2);
-        SceneManager.LoadSceneAsync(GameManager.instance.CurrentScene);
+        Invoke("LoadNewScene", 2);
+   
     }
     
+    //CHARGEMENT DE LA SCENE SUIVANTE
+    public void LoadNewScene()
+    {
+        ChangeScene();
+        SceneManager.LoadSceneAsync(GameManager.instance.CurrentScene);
+    }
 
     private void OnLevelWasLoaded(int level)
     {
-        Debug.Log(SceneManager.GetActiveScene());
+        
+        BlackFade.DOColor(Dotween, 2);
+        Invoke("DisableFade",2);   
+    }
+
+    void DisableFade()
+    {
+        BlackFade.gameObject.SetActive(false);
     }
 
     public void ChangeScene()
@@ -50,5 +65,16 @@ public class Scene_Gestion : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void OnEnable()
+    {
+        Lua.RegisterFunction("GoToNextScene", this, SymbolExtensions.GetMethodInfo(() => SceneTransition()));
+
+    }
+
+    void OnDisable()
+    {
+        Lua.UnregisterFunction("GoToNextScene");
     }
 }

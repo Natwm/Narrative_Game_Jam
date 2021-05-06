@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using FMODUnity;
+using PixelCrushers.DialogueSystem;
+
 
 public class StickerSpawner : MonoBehaviour
 {
@@ -15,6 +17,7 @@ public class StickerSpawner : MonoBehaviour
     public GameObject[] collidersDecors;
     GameManager instance;
     SceneParser sceneParser;
+    bool spawnOnce;
     // Start is called before the first frame update
     void Start()
     {
@@ -95,6 +98,7 @@ public class StickerSpawner : MonoBehaviour
     //-Add localisation and object mention
     public void SpawnItem(SceneItem[] arrayToPickFrom)
     {
+
         collider_feuille.SetActive(false);
         collider_spawnfeuille.SetActive(true);
         for (int i = 1; i < arrayToPickFrom.Length; i++)
@@ -131,6 +135,7 @@ public class StickerSpawner : MonoBehaviour
         {
             item.SetActive(false);
         }
+        GameManager.instance.CurrentScene++;
     }
 
     public void JESUISUNSCHLAGUEMAISJESPAWNDESOBJETS()
@@ -147,19 +152,18 @@ public class StickerSpawner : MonoBehaviour
         }
     }
 
-    // To Do
-    // Index Scene
-    // CSV by scene
-    // Mandatory Names - Optional by Scene - Max Doubles.
-    // Get non scene Related Array
-    //DISTRIBUTION?
-    // 
-    // Parse Csv
-    // Get Mandatory Names
-    // 
-    // Read Array
-    // GENERATION
-    // FIRST>All OBLIGATORY ITEMS
-    // SECOND> SECONDARY ITEMS > Get Max Iteration Number > Rand Iteration
-    // LAST> FREE ITEMS
+
+    void OnEnable()
+    {
+        Lua.RegisterFunction("SpawnItem", this, SymbolExtensions.GetMethodInfo(() => JESUISUNSCHLAGUEMAISJESPAWNDESOBJETS()));
+        
+    }
+
+    void OnDisable()
+    {
+        Lua.UnregisterFunction("SpawnItem");
+    }
+
+
+
 }
