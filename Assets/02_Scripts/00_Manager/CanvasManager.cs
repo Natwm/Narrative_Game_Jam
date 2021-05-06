@@ -27,9 +27,15 @@ public class CanvasManager : MonoBehaviour
     #region AWAKE | START | UPDATE
     void Awake()
     {
-        if (instance != null)
-            Debug.LogWarning("Multiple instance of same Singleton : CanvasManager");
-        instance = this;
+        if (instance == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            instance = this;
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
     }
 
     // Start is called before the first frame update
@@ -51,7 +57,7 @@ public class CanvasManager : MonoBehaviour
         plush = s;
     }
 
-    public void ShowinputPanel()
+    public void ShowInputPanel()
     {
         inputPanel_Panel.SetActive(true);
     }
@@ -130,12 +136,13 @@ public class CanvasManager : MonoBehaviour
     #region Lua region
     void OnEnable()
     {
-        Lua.RegisterFunction("InputPanel", this, SymbolExtensions.GetMethodInfo(() => ShowinputPanel()));
+        Lua.RegisterFunction("A", this, SymbolExtensions.GetMethodInfo(() => ShowInputPanel()));
     }
 
     void OnDisable()
     {
-        Lua.UnregisterFunction("InputPanel");
+        /*Debug.Log("blabla mais 2");
+        Lua.UnregisterFunction("A");*/
     }
 
     #endregion

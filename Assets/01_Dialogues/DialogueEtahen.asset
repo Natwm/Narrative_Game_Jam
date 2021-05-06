@@ -3342,7 +3342,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: SetContinueMode(true)
         type: 0
         typeString: CustomFieldType_Text
       - title: FR
@@ -3369,13 +3369,13 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: A()
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
+        x: 305.84747
         y: 458
         width: 160
         height: 30
@@ -3422,7 +3422,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: SetContinueMode(false)
         type: 0
         typeString: CustomFieldType_Text
       - title: FR
@@ -4093,8 +4093,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305.89285
-        y: 908
+        x: 306.7403
+        y: 908.8474
         width: 160
         height: 30
     - id: 18
@@ -4378,7 +4378,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: SetContinueMode(false)
         type: 0
         typeString: CustomFieldType_Text
       - title: FR
@@ -4410,7 +4410,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
+        x: 304.15256
         y: 1108
         width: 160
         height: 30
@@ -6552,7 +6552,7 @@ MonoBehaviour:
         y: 2458
         width: 160
         height: 30
-    canvasScrollPosition: {x: 18.616226, y: 0}
+    canvasScrollPosition: {x: 0, y: 612.71216}
     canvasZoom: 1.1799997
   - id: 5
     fields:
@@ -22040,8 +22040,8 @@ MonoBehaviour:
         y: 1446
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.7000003
+    canvasScrollPosition: {x: 41.875324, y: 7.501046}
+    canvasZoom: 1.2099999
   syncInfo:
     syncActors: 0
     syncItems: 0

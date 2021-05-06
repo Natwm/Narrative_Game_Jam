@@ -47,9 +47,15 @@ public class GameManager : MonoBehaviour
     void Awake()
     {
         //print(DialogueManager.GetLocalizedText());
-        if (instance != null)
-            Debug.LogWarning("Multiple instance of same Singleton : GameManager");
-        instance = this;
+        if (instance == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            instance = this;
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void Start()
@@ -202,10 +208,12 @@ public class GameManager : MonoBehaviour
         Lua.RegisterFunction("ResetItem", this, SymbolExtensions.GetMethodInfo(() => ResetItemNeeded()));
         Lua.RegisterFunction("waitForPlayerInput", this, SymbolExtensions.GetMethodInfo(() => ChangeWaitForInput()));
         Lua.RegisterFunction("WaitForMaurice", this, SymbolExtensions.GetMethodInfo(() => ItsEnd()));
+        //Lua.RegisterFunction("ShowInputPanel", this, SymbolExtensions.GetMethodInfo(() => CanvasManager.instance.ShowInputPanel()));
     }
 
     void OnDisable()
     {
+        /*Debug.Log("blabla");
         Lua.UnregisterFunction("Dad");
         Lua.UnregisterFunction("Mom");
         Lua.UnregisterFunction("Hina");
@@ -215,7 +223,8 @@ public class GameManager : MonoBehaviour
         Lua.UnregisterFunction("AddItem");
         Lua.UnregisterFunction("ResetItem");
         Lua.UnregisterFunction("waitForPlayerInput");
-        Lua.UnregisterFunction("WaitForMaurice");
+        Lua.UnregisterFunction("WaitForMaurice");*/
+        //Lua.UnregisterFunction("ShowInputPanel");
     }
 
     #endregion

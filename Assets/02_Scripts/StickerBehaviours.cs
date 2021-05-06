@@ -77,15 +77,6 @@ public class StickerBehaviours : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.O))
-        {
-            SwapSprite(mauriceSprites[0]);
-        }
-        if (Input.GetKeyUp(KeyCode.I))
-        {
-            SwapSprite(mauriceSprites[1]);
-        }
-
         if (Input.mouseScrollDelta.y != 0 && isMoving && tag != "Maurice")
         {
             transform.DORotate((transform.eulerAngles + new Vector3(0, rotationSpeed * 10 * Input.mouseScrollDelta.y, 0)), 0.01f);
