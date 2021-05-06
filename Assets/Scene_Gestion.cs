@@ -5,18 +5,19 @@ using UnityEngine.SceneManagement;
 using PixelCrushers.DialogueSystem;
 using UnityEngine.UI;
 using DG.Tweening;
+using FMODUnity;
+
 
 public class Scene_Gestion : MonoBehaviour
 {
     public Image BlackFade;
     public Color Dotween;
     public Color CDELAMERDE;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-       
-    }
+
+    [FMODUnity.EventRef]
+     public string MusicAmbiant;
+
+    FMOD.Studio.EventInstance AmbiantEvent;
 
     public void InitializeScene()
     {
@@ -61,10 +62,11 @@ public class Scene_Gestion : MonoBehaviour
         SceneManager.LoadScene(newScene);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void LaunchMusic()
     {
-        
+        GameManager.instance.soundEvent.start();
+        AmbiantEvent = FMODUnity.RuntimeManager.CreateInstance(MusicAmbiant);
+        AmbiantEvent.start();
     }
 
     void OnEnable()
