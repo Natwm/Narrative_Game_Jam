@@ -44,3 +44,6 @@ MonoBehaviour:
   - functionName: A
     parameters: 
     returnValue: 0
+  - functionName: SpawnAObject
+    parameters: 02000000
+    returnValue: 0

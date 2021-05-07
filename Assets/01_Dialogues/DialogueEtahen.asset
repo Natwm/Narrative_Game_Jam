@@ -2812,8 +2812,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 58
+        x: 1390.714
+        y: 154.42853
         width: 160
         height: 30
     - id: 1
@@ -2891,8 +2891,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 108
+        x: 1390.714
+        y: 204.42853
         width: 160
         height: 30
     - id: 2
@@ -2970,8 +2970,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 303.05826
-        y: 172.5631
+        x: 1388.7722
+        y: 268.9916
         width: 160
         height: 30
     - id: 4
@@ -3050,8 +3050,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 258
+        x: 1390.714
+        y: 354.42856
         width: 160
         height: 30
     - id: 5
@@ -3129,8 +3129,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 308
+        x: 1390.714
+        y: 404.42856
         width: 160
         height: 30
     - id: 6
@@ -3214,8 +3214,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 358
+        x: 1390.714
+        y: 454.42856
         width: 160
         height: 30
     - id: 7
@@ -3295,8 +3295,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 408
+        x: 1390.714
+        y: 504.42853
         width: 160
         height: 30
     - id: 8
@@ -3375,8 +3375,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305.84747
-        y: 458
+        x: 1391.5614
+        y: 554.4286
         width: 160
         height: 30
     - id: 9
@@ -3454,8 +3454,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 508
+        x: 1390.714
+        y: 604.4286
         width: 160
         height: 30
     - id: 10
@@ -3533,8 +3533,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 558
+        x: 1390.714
+        y: 654.4286
         width: 160
         height: 30
     - id: 11
@@ -3614,8 +3614,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 608
+        x: 1390.714
+        y: 704.4286
         width: 160
         height: 30
     - id: 12
@@ -3695,8 +3695,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 658
+        x: 1390.714
+        y: 754.4286
         width: 160
         height: 30
     - id: 13
@@ -3776,8 +3776,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 708
+        x: 1390.714
+        y: 804.4286
         width: 160
         height: 30
     - id: 14
@@ -3856,8 +3856,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 758
+        x: 1390.714
+        y: 854.4286
         width: 160
         height: 30
     - id: 15
@@ -3935,8 +3935,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 808
+        x: 1390.714
+        y: 904.4286
         width: 160
         height: 30
     - id: 16
@@ -4014,8 +4014,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 858
+        x: 1390.714
+        y: 954.4286
         width: 160
         height: 30
     - id: 17
@@ -4093,8 +4093,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 306.7403
-        y: 908.8474
+        x: 1392.4542
+        y: 1005.2759
         width: 160
         height: 30
     - id: 18
@@ -4172,8 +4172,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 958
+        x: 1390.714
+        y: 1054.4285
         width: 160
         height: 30
     - id: 19
@@ -4251,8 +4251,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 1008
+        x: 1390.714
+        y: 1104.4282
         width: 160
         height: 30
     - id: 20
@@ -4325,14 +4325,16 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: waitForPlayerInput()
+      userScript: 'waitForPlayerInput();
+
+        SpawnAObject("pizza")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 1058
+        x: 1390.714
+        y: 1154.4282
         width: 160
         height: 30
     - id: 21
@@ -4410,8 +4412,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 304.15256
-        y: 1108
+        x: 1389.8665
+        y: 1204.4282
         width: 160
         height: 30
     - id: 22
@@ -4489,8 +4491,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 1158
+        x: 1390.714
+        y: 1254.4282
         width: 160
         height: 30
     - id: 23
@@ -4568,8 +4570,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 1208
+        x: 1390.714
+        y: 1304.4282
         width: 160
         height: 30
     - id: 24
@@ -4647,8 +4649,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 1258
+        x: 1390.714
+        y: 1354.4282
         width: 160
         height: 30
     - id: 25
@@ -4726,8 +4728,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 1308
+        x: 1390.714
+        y: 1404.4282
         width: 160
         height: 30
     - id: 26
@@ -4799,14 +4801,16 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: waitForPlayerInput()
+      userScript: 'waitForPlayerInput();
+
+        SpawnAObject("couch")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 1358
+        x: 1390.714
+        y: 1454.4282
         width: 160
         height: 30
     - id: 27
@@ -4878,14 +4882,16 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: waitForPlayerInput()
+      userScript: 'waitForPlayerInput();
+
+        SpawnAObject("television")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305.97086
-        y: 1408.9175
+        x: 1391.6848
+        y: 1505.3457
         width: 160
         height: 30
     - id: 28
@@ -4964,8 +4970,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 1458
+        x: 1390.714
+        y: 1550.0325
         width: 160
         height: 30
     - id: 29
@@ -5043,8 +5049,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 1508
+        x: 1390.714
+        y: 1604.4282
         width: 160
         height: 30
     - id: 30
@@ -5122,8 +5128,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 1558
+        x: 1390.714
+        y: 1654.4282
         width: 160
         height: 30
     - id: 31
@@ -5195,14 +5201,16 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: waitForPlayerInput()
+      userScript: 'waitForPlayerInput();
+
+        SpawnAObject("metal-boxes")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 1608
+        x: 1390.714
+        y: 1704.4282
         width: 160
         height: 30
     - id: 32
@@ -5280,8 +5288,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 1658
+        x: 1390.714
+        y: 1754.4282
         width: 160
         height: 30
     - id: 33
@@ -5359,8 +5367,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 1708.971
+        x: 1390.714
+        y: 1805.3992
         width: 160
         height: 30
     - id: 34
@@ -5439,8 +5447,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 1758
+        x: 1390.714
+        y: 1854.4282
         width: 160
         height: 30
     - id: 35
@@ -5520,8 +5528,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 1808
+        x: 1390.714
+        y: 1904.4282
         width: 160
         height: 30
     - id: 36
@@ -5599,8 +5607,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 1858
+        x: 1390.714
+        y: 1954.4282
         width: 160
         height: 30
     - id: 37
@@ -5673,14 +5681,16 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: waitForPlayerInput()
+      userScript: 'waitForPlayerInput();
+
+        SpawnAObject("milk")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 1908
+        x: 1390.714
+        y: 2004.4282
         width: 160
         height: 30
     - id: 38
@@ -5759,8 +5769,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 1958
+        x: 1390.714
+        y: 2054.428
         width: 160
         height: 30
     - id: 39
@@ -5840,8 +5850,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 2008
+        x: 1390.714
+        y: 2104.4285
         width: 160
         height: 30
     - id: 40
@@ -5919,8 +5929,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 2058
+        x: 1390.714
+        y: 2154.4285
         width: 160
         height: 30
     - id: 41
@@ -5999,8 +6009,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 2108
+        x: 1390.714
+        y: 2204.4285
         width: 160
         height: 30
     - id: 42
@@ -6078,8 +6088,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 306.9549
-        y: 2157.8247
+        x: 1392.6688
+        y: 2254.2532
         width: 160
         height: 30
     - id: 43
@@ -6159,8 +6169,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 2208
+        x: 1390.714
+        y: 2304.4285
         width: 160
         height: 30
     - id: 44
@@ -6238,8 +6248,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305
-        y: 2257.0293
+        x: 1390.714
+        y: 2353.4578
         width: 160
         height: 30
     - id: 45
@@ -6317,8 +6327,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305.9434
-        y: 2308
+        x: 1391.6573
+        y: 2404.4285
         width: 160
         height: 30
     - id: 46
@@ -6396,8 +6406,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305.9434
-        y: 2358
+        x: 1391.6573
+        y: 2454.4285
         width: 160
         height: 30
     - id: 47
@@ -6475,8 +6485,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305.9434
-        y: 2408
+        x: 1391.6573
+        y: 2504.4285
         width: 160
         height: 30
     - id: 48
@@ -6548,12 +6558,12 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305.9434
-        y: 2458
+        x: 1391.6573
+        y: 2554.4285
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 1982.7046}
-    canvasZoom: 1.2399997
+    canvasScrollPosition: {x: 935.77045, y: 1734.7627}
+    canvasZoom: 0.81999993
   - id: 5
     fields:
     - title: Title
@@ -7472,7 +7482,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: waitForPlayerInput()
+      userScript: 'waitForPlayerInput();
+
+        SpawnAObject("hina")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -7633,7 +7645,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: waitForPlayerInput()
+      userScript: 'waitForPlayerInput();
+
+        SpawnAObject("toy2")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -7713,7 +7727,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: waitForPlayerInput()
+      userScript: 'waitForPlayerInput();
+
+        SpawnAObject("toy1")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -8110,7 +8126,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: waitForPlayerInput()
+      userScript: 'waitForPlayerInput();
+
+        SpawnAObject("door")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -8191,7 +8209,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: waitForPlayerInput()
+      userScript: 'waitForPlayerInput();
+
+        SpawnAObject("mum")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -9388,8 +9408,8 @@ MonoBehaviour:
         y: 1784.1177
         width: 160
         height: 30
-    canvasScrollPosition: {x: 59.756104, y: 0}
-    canvasZoom: 0.8199998
+    canvasScrollPosition: {x: 0, y: 1206.9519}
+    canvasZoom: 0.99999976
   - id: 6
     fields:
     - title: Title
@@ -9756,7 +9776,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: waitForPlayerInput()
+      userScript: 'waitForPlayerInput();
+
+        SpawnAObject("ethan")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -9835,7 +9857,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: waitForPlayerInput()
+      userScript: 'waitForPlayerInput();
+
+        SpawnAObject("fireboy")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -10389,7 +10413,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: waitForPlayerInput()
+      userScript: 'waitForPlayerInput();
+
+        SpawnAObject("garden")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -10525,13 +10551,14 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: FR
-        value: "Papi dit qu\u2019on leur fait penser \xE0 leurs petits enfants, mais
-          il dit que lui et mamie sont tristes parce qu\u2019ils les voient pas souvent."
+        value: "<color=#780422>Papi </color>dit qu\u2019on leur fait penser \xE0
+          leurs petits enfants, mais il dit que lui et mamie sont tristes parce qu\u2019ils
+          les voient pas souvent."
         type: 4
         typeString: CustomFieldType_Localization
       - title: UK
-        value: Grandpa says we look like their grandchildren, but he says he and
-          grandma are sad because they don't see them often.
+        value: <color=#780422>Grandpa</color> says we look like their grandchildren,
+          but he says he and grandma are sad because they don't see them often.
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 6
@@ -10549,7 +10576,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: waitForPlayerInput()
+      userScript: 'waitForPlayerInput();
+
+        SpawnAObject("grandpa")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -11262,7 +11291,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: waitForPlayerInput()
+      userScript: 'waitForPlayerInput();
+
+        SpawnAObject("teddy")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -12217,7 +12248,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: waitForPlayerInput()
+      userScript: 'waitForPlayerInput();
+
+        SpawnAObject("cookie")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -12536,7 +12569,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: waitForPlayerInput()
+      userScript: 'waitForPlayerInput();
+
+        SpawnAObject("granny")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -14052,8 +14087,8 @@ MonoBehaviour:
         y: 2902.3684
         width: 160
         height: 30
-    canvasScrollPosition: {x: 406.20508, y: 0}
-    canvasZoom: 1.2399995
+    canvasScrollPosition: {x: 258.6361, y: 2574.6133}
+    canvasZoom: 1.2699995
   - id: 7
     fields:
     - title: Title
@@ -14818,7 +14853,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: waitForPlayerInput()
+      userScript: 'waitForPlayerInput();
+
+        SpawnAObject("magicsong")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -14979,7 +15016,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: waitForPlayerInput()
+      userScript: 'waitForPlayerInput();
+
+        SpawnAObject("screaming")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -15297,7 +15336,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: waitForPlayerInput()
+      userScript: 'waitForPlayerInput();
+
+        SpawnAObject("bread")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -15455,7 +15496,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: waitForPlayerInput()
+      userScript: 'waitForPlayerInput();
+
+        SpawnAObject("saddad")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -15776,7 +15819,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: waitForPlayerInput()
+      userScript: 'waitForPlayerInput();
+
+        SpawnAObject("drugs")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -16735,7 +16780,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 417
-        y: 1661
+        y: 1661.8265
         width: 160
         height: 30
     - id: 33
@@ -16812,8 +16857,8 @@ MonoBehaviour:
         y: 1709.9691
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1.1799996
+    canvasScrollPosition: {x: 94.053894, y: 1125.669}
+    canvasZoom: 1.2099996
   - id: 8
     fields:
     - title: Title
@@ -17421,7 +17466,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: waitForPlayerInput()
+      userScript: 'waitForPlayerInput();
+
+        SpawnAObject("hina3")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -17582,7 +17629,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: waitForPlayerInput()
+      userScript: 'waitForPlayerInput();
+
+        SpawnAObject("blanket")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -17982,7 +18031,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: waitForPlayerInput()
+      userScript: 'waitForPlayerInput();
+
+        SpawnAObject("milk")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -18778,7 +18829,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: waitForPlayerInput()
+      userScript: 'waitForPlayerInput();
+
+        SpawnAObject("comic")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -18858,7 +18911,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: waitForPlayerInput()
+      userScript: 'waitForPlayerInput();
+
+        SpawnAObject("teddy")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -19661,8 +19716,8 @@ MonoBehaviour:
         y: 1746
         width: 160
         height: 30
-    canvasScrollPosition: {x: 83.88988, y: 0}
-    canvasZoom: 1.0799997
+    canvasScrollPosition: {x: 38.836906, y: 1147.5664}
+    canvasZoom: 1.0499997
   - id: 9
     fields:
     - title: Title

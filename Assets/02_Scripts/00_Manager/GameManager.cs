@@ -208,6 +208,7 @@ public class GameManager : MonoBehaviour
         Lua.RegisterFunction("ResetItem", this, SymbolExtensions.GetMethodInfo(() => ResetItemNeeded()));
         Lua.RegisterFunction("waitForPlayerInput", this, SymbolExtensions.GetMethodInfo(() => ChangeWaitForInput()));
         Lua.RegisterFunction("WaitForMaurice", this, SymbolExtensions.GetMethodInfo(() => ItsEnd()));
+        Lua.RegisterFunction("SpawnAObject", this, SymbolExtensions.GetMethodInfo(() => SpawnAObject(string.Empty)));
         //Lua.RegisterFunction("ShowInputPanel", this, SymbolExtensions.GetMethodInfo(() => CanvasManager.instance.ShowInputPanel()));
     }
 
