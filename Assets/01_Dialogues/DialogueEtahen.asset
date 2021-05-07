@@ -5528,7 +5528,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1390.714
+        x: 1389.1515
         y: 1904.4282
         width: 160
         height: 30
@@ -6722,8 +6722,8 @@ MonoBehaviour:
         y: 1926.9266
         width: 160
         height: 30
-    canvasScrollPosition: {x: 688.09155, y: 1882.7585}
-    canvasZoom: 0.5799999
+    canvasScrollPosition: {x: 853.4068, y: 1601.8057}
+    canvasZoom: 0.63999987
   - id: 5
     fields:
     - title: Title
@@ -7783,13 +7783,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: FR
-        value: "Oui ! Quand je faisais tomber des <color=#780422>blocs de cube</color>,
-          \xE7a faisait beaucoup rire Hina."
+        value: 'Oui !! '
         type: 4
         typeString: CustomFieldType_Localization
       - title: UK
-        value: Yes ! When I drop my <color=#780422>wooden blocks</color>, it makes
-          Hina laugh a lot.
+        value: Yes !!
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 5
@@ -7866,12 +7864,13 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: FR
-        value: "M\xEAme une fois quand je suis tomb\xE9 du <color=#780422>cheval
-          !</color>"
+        value: "Quand je faisais tomber des <color=#780422>blocs de cube</color>,
+          \xE7a faisait beaucoup rire Hina."
         type: 4
         typeString: CustomFieldType_Localization
       - title: UK
-        value: She even laughed once when I fell off my <color=#780422>wooden horse.</color>
+        value: When I drop my <color=#780422>wooden blocks</color>, it makes Hina
+          laugh a lot.
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 5
@@ -8826,8 +8825,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: FR
-        value: "J\u2019ai vu \xE7a \xE0 la t\xE9l\xE9 quand papa regardait, les d\xE9mons
-          ..."
+        value: "J\u2019ai vu \xE7a \xE0 la t\xE9l\xE9 quand papa regardait, les d\xE9mons..."
         type: 4
         typeString: CustomFieldType_Localization
       - title: UK
@@ -9616,11 +9614,12 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: FR
-        value: 
+        value: "M\xEAme une fois quand je suis tomb\xE9 du <color=#780422>cheval
+          </color>!"
         type: 4
         typeString: CustomFieldType_Localization
       - title: UK
-        value: 
+        value: She even laughed once when I fell off my <color=#780422>wooden horse</color>.
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 5
@@ -9774,11 +9773,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: FR
-        value: "ils obligent les gens \xE0 faire des choses m\xE9chantes."
+        value: "Ils obligent les gens \xE0 faire des choses m\xE9chantes."
         type: 4
         typeString: CustomFieldType_Localization
       - title: UK
-        value: they make people do bad things.
+        value: They make people do bad things.
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 5
@@ -9802,11 +9801,11 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 528.38245
+        x: 529.81104
         y: 1359.853
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 456.66922}
+    canvasScrollPosition: {x: 15.303291, y: 896.4583}
     canvasZoom: 0.7299998
   - id: 6
     fields:
@@ -10233,11 +10232,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: FR
-        value: "C\u2019est qui <color=#780422>Super Fire Boy ?</color>"
+        value: <color=#780422>Super Fire Boy ?</color>
         type: 4
         typeString: CustomFieldType_Localization
       - title: UK
-        value: Who is <color=#780422>Super Fire Boy ?</color>
+        value: <color=#780422>Super Fire Boy ?</color>
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 6
@@ -12624,11 +12623,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: FR
-        value: "Oui ! Et des <color=#780422>g\xE2teaux</color> aussi."
+        value: 'Oui ! '
         type: 4
         typeString: CustomFieldType_Localization
       - title: UK
-        value: Yes ! And <color=#780422>cakes</color> too.
+        value: 'Yes ! '
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 6
@@ -14500,11 +14499,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 1
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -14567,7 +14566,7 @@ MonoBehaviour:
     - id: 59
       fields:
       - title: Title
-        value: New Dialogue Entry
+        value: 
         type: 0
         typeString: CustomFieldType_Text
       - title: Pictures
@@ -14611,11 +14610,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: FR
-        value: 
+        value: "Et des <color=#780422>g\xE2teaux</color> aussi."
         type: 4
         typeString: CustomFieldType_Localization
       - title: UK
-        value: 
+        value: And <color=#780422>cakes</color> too.
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 6
@@ -14640,11 +14639,11 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 720.40485
-        y: 1769.4014
+        y: 1770.8939
         width: 160
         height: 30
-    canvasScrollPosition: {x: 183.19305, y: 2329.0537}
-    canvasZoom: 0.87999994
+    canvasScrollPosition: {x: 0, y: 2111.9397}
+    canvasZoom: 0.67000014
   - id: 7
     fields:
     - title: Title
@@ -15304,11 +15303,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: FR
-        value: "Je pr\xE9pare les jouets de Hina et je vais voir papa "
+        value: "Je pr\xE9pare les jouets de Hina et..."
         type: 4
         typeString: CustomFieldType_Localization
       - title: UK
-        value: I get Hina's toys ready and go to Daddy
+        value: I get Hina's toys ready and...
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 7
@@ -17460,12 +17459,12 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: FR
-        value: "Pour lui expliquer comment faire si elle se r\xE9veille et qu\u2019elle
-          pleure."
+        value: "Et... je vais voir papa pour lui expliquer comment faire si elle
+          se r\xE9veille et qu\u2019elle pleure."
         type: 4
         typeString: CustomFieldType_Localization
       - title: UK
-        value: ' To tell him what to do if she wakes up and cries.'
+        value: And.. go to Daddy to tell him what to do if she wakes up and cries.
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 7
@@ -17493,7 +17492,7 @@ MonoBehaviour:
         y: 436.4237
         width: 160
         height: 30
-    canvasScrollPosition: {x: 71.59094, y: 0}
+    canvasScrollPosition: {x: 62.50006, y: 832.9545}
     canvasZoom: 0.87999964
   - id: 8
     fields:
@@ -20591,8 +20590,8 @@ MonoBehaviour:
         y: 708.49207
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 158.99997}
-    canvasZoom: 0.7200002
+    canvasScrollPosition: {x: 44.099236, y: 692.1841}
+    canvasZoom: 0.69000024
   - id: 9
     fields:
     - title: Title
