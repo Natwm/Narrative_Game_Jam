@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 935899b62f48ae5498594680ed17d133, type: 3}
-  m_Name: DialogueEtahen (Auto-Backup)
+  m_Name: DialogueEtahen
   m_EditorClassIdentifier: 
   version: 
   author: 
@@ -18031,7 +18031,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: waitForPlayerInput()
+      userScript: 'waitForPlayerInput();
+
+        SpawnAObject("milk")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -18827,7 +18829,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: waitForPlayerInput()
+      userScript: 'waitForPlayerInput();
+
+        SpawnAObject("comic")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -18907,7 +18911,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: waitForPlayerInput()
+      userScript: 'waitForPlayerInput();
+
+        SpawnAObject("teddy")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -19710,8 +19716,8 @@ MonoBehaviour:
         y: 1746
         width: 160
         height: 30
-    canvasScrollPosition: {x: 32.03801, y: 240.74081}
-    canvasZoom: 1.0799997
+    canvasScrollPosition: {x: 38.836906, y: 1147.5664}
+    canvasZoom: 1.0499997
   - id: 9
     fields:
     - title: Title
