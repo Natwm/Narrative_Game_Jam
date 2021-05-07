@@ -2930,7 +2930,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1992427482}
   - component: {fileID: 1992427481}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ColliderPsy (1)
   m_TagString: End
   m_Icon: {fileID: 0}

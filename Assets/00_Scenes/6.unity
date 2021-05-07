@@ -685,7 +685,7 @@ GameObject:
   m_Component:
   - component: {fileID: 373796333}
   - component: {fileID: 373796332}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ColliderPsy (1)
   m_TagString: End
   m_Icon: {fileID: 0}
