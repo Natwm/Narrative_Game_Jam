@@ -412,7 +412,12 @@ PrefabInstance:
     - target: {fileID: 4730806526893610811, guid: aa8374a30a2a3634aadc79370939765f,
         type: 3}
       propertyPath: CurrentScene
-      value: 0
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730806526893610811, guid: aa8374a30a2a3634aadc79370939765f,
+        type: 3}
+      propertyPath: currentLanguage
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5994691075435785568, guid: aa8374a30a2a3634aadc79370939765f,
         type: 3}
