@@ -111,6 +111,7 @@ public class MainMenu : MonoBehaviour
         if (language == "francais")
         {
             DialogueManager.instance.SetLanguage("FR");
+            GameManager.instance.currentLanguage = GameManager.Language.Francais;
             startText.text = "Jouer";
             creditText.text = "Crédits";
             exitText.text = "Quitter";
@@ -118,6 +119,7 @@ public class MainMenu : MonoBehaviour
         else
         {
             DialogueManager.instance.SetLanguage("UK");
+            GameManager.instance.currentLanguage = GameManager.Language.Anglais;
             startText.text = "Play";
             creditText.text = "Credits";
             exitText.text = "Exit";
