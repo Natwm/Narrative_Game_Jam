@@ -905,7 +905,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Jour 1
+  m_text: "S\xE9ance 1"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f64ffb2a7fd8b5e4b9b95489c8cf51d5, type: 2}
   m_sharedMaterial: {fileID: 277084349987465201, guid: f64ffb2a7fd8b5e4b9b95489c8cf51d5,
@@ -1441,6 +1441,7 @@ GameObject:
   - component: {fileID: 820361299}
   - component: {fileID: 820361298}
   - component: {fileID: 820361297}
+  - component: {fileID: 820361301}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1530,6 +1531,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &820361301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820361296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e4403e8a0ae0f44dbc74d072c010cf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartText: {fileID: 332705747}
+  SessionText: {fileID: 578101625}
 --- !u!1 &845553716
 GameObject:
   m_ObjectHideFlags: 0
