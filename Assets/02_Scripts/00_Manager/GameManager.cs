@@ -39,6 +39,8 @@ public class GameManager : MonoBehaviour
     public int amountOfSticker = 0;
     public int maxAmountOfSticker = 0;
 
+    public bool waitASecond = false;
+
     public GameObject Maurice { get => maurice; set => maurice = value; }
 
     #endregion
@@ -193,6 +195,12 @@ public class GameManager : MonoBehaviour
     {
         waitForPlayerInput = true;
     }
+
+    public void WaitASecond()
+    {
+        waitASecond = true;
+    }
+
     #endregion
 
     #region Lua region
@@ -209,6 +217,7 @@ public class GameManager : MonoBehaviour
         Lua.RegisterFunction("waitForPlayerInput", this, SymbolExtensions.GetMethodInfo(() => ChangeWaitForInput()));
         Lua.RegisterFunction("WaitForMaurice", this, SymbolExtensions.GetMethodInfo(() => ItsEnd()));
         Lua.RegisterFunction("SpawnAObject", this, SymbolExtensions.GetMethodInfo(() => SpawnAObject(string.Empty)));
+        Lua.RegisterFunction("WaitASecond", this, SymbolExtensions.GetMethodInfo(() => WaitASecond()));
         //Lua.RegisterFunction("ShowInputPanel", this, SymbolExtensions.GetMethodInfo(() => CanvasManager.instance.ShowInputPanel()));
     }
 

@@ -77,6 +77,6 @@ public class Scene_Gestion : MonoBehaviour
 
     void OnDisable()
     {
-        Lua.UnregisterFunction("GoToNextScene");
+        //Lua.UnregisterFunction("GoToNextScene");
     }
 }

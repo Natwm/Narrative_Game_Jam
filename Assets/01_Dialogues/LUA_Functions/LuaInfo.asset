@@ -47,3 +47,9 @@ MonoBehaviour:
   - functionName: SpawnAObject
     parameters: 02000000
     returnValue: 0
+  - functionName: GoToNextScene
+    parameters: 
+    returnValue: 0
+  - functionName: WaitASecond
+    parameters: 
+    returnValue: 0

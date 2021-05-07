@@ -142,6 +142,11 @@ public class StickerBehaviours : MonoBehaviour
                     {
                         FindObjectOfType<StandardUIContinueButtonFastForward>().OnFastForward();
                         GameManager.instance.waitForPlayerInput = false;
+                        
+                    }else if (GameManager.instance.waitASecond && !GameManager.instance.waitForPlayerInput)
+                    {
+                        FindObjectOfType<StandardUIContinueButtonFastForward>().OnFastForward();
+                        GameManager.instance.waitASecond = false;
                     }
 
                     GameManager.instance.amountOfSticker++;
@@ -154,6 +159,9 @@ public class StickerBehaviours : MonoBehaviour
         else if (other.gameObject.CompareTag("End") && tag == "Maurice" && GameManager.instance.isEnd && !isMoving && hasbeengrabbed)
         {
             print("end");
+            //FindObjectOfType<Scene_Gestion>().SceneTransition();
+            FindObjectOfType<StandardUIContinueButtonFastForward>().OnFastForward();
+            GameManager.instance.waitForPlayerInput = false;
             // lancer le niveau suivant
         }
     }
