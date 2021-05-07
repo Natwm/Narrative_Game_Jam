@@ -132,25 +132,26 @@ public class MainMenu : MonoBehaviour
             Debug.Log("Toggle Sound On");
             soundbutton.sprite = soundsprite[1];
             soundState = false;
-            Master.setPaused(false);
+            Master.setPaused(true);
         }
         else
         {
             Debug.Log("Toggle Sound Off");
             soundbutton.sprite = soundsprite[0];
             soundState = true;
-            Master.setPaused(true);
+            Master.setPaused(false);
         }
     }
 
     public FMOD.Studio.Bus Master;
-    
 
+    public float basevolume;
     // Start is called before the first frame update
     void Start()
     {
         Master = FMODUnity.RuntimeManager.GetBus("bus:/");
         ParentImage.rectTransform.SetPositionAndRotation(startPoint.transform.position, ParentImage.rectTransform.rotation);
+        Master.getVolume(out basevolume);
     }
 
     

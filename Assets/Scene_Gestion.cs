@@ -20,14 +20,7 @@ public class Scene_Gestion : MonoBehaviour
     FMOD.Studio.EventInstance AmbiantEvent;
     MainMenu mainMenuScript;
 
-    public void InitializeScene()
-    {
-        
-        GameManager.instance.CurrentScene ++;
-        //FindObjectOfType<StickerSpawner>().JESUISUNSCHLAGUEMAISJESPAWNDESOBJETS();
-       
-    }
-
+ 
     public void Start()
     {
         mainMenuScript = FindObjectOfType<MainMenu>();
@@ -49,7 +42,7 @@ public class Scene_Gestion : MonoBehaviour
     {
         
         ChangeScene();
-        SceneManager.LoadSceneAsync(GameManager.instance.CurrentScene);
+        
     }
 
     private void OnLevelWasLoaded(int level)
@@ -69,8 +62,8 @@ public class Scene_Gestion : MonoBehaviour
 
     public void ChangeScene()
     {
-        int newScene = GameManager.instance.CurrentScene++;
-        SceneManager.LoadScene(newScene);
+        GameManager.instance.CurrentScene++;
+        SceneManager.LoadScene(GameManager.instance.CurrentScene);
     }
 
     public void LaunchMusic()
