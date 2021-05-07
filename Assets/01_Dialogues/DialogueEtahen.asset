@@ -3051,7 +3051,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 1390.714
-        y: 354.42856
+        y: 352.93604
         width: 160
         height: 30
     - id: 5
@@ -3665,7 +3665,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: FR
-        value: Lorsque je ne poserais plus de question, tu pourras continuer de placer
+        value: Lorsque je ne poserai plus de question, tu pourras continuer de placer
           autant d'autocollants que tu veux.
         type: 4
         typeString: CustomFieldType_Localization
@@ -6722,8 +6722,8 @@ MonoBehaviour:
         y: 1926.9266
         width: 160
         height: 30
-    canvasScrollPosition: {x: 853.4068, y: 1601.8057}
-    canvasZoom: 0.63999987
+    canvasScrollPosition: {x: 810.9161, y: 77.612}
+    canvasZoom: 0.66999984
   - id: 5
     fields:
     - title: Title
@@ -7303,11 +7303,11 @@ MonoBehaviour:
         typeString: CustomFieldType_Text
       - title: FR
         value: "Tu me disais la derni\xE8re fois que quand ta s\u0153ur pleurait
-          quand ta m\xE8re n\u2019\xE9tait pas contente."
+          ta m\xE8re n\u2019\xE9tait pas contente."
         type: 4
         typeString: CustomFieldType_Localization
       - title: UK
-        value: "You were telling me last time that your sister cries when your mother
+        value: "You were telling me last time that your sister cries your mother
           isn\u2019t happy."
         type: 4
         typeString: CustomFieldType_Localization
@@ -9805,7 +9805,7 @@ MonoBehaviour:
         y: 1359.853
         width: 160
         height: 30
-    canvasScrollPosition: {x: 15.303291, y: 896.4583}
+    canvasScrollPosition: {x: 0, y: 0}
     canvasZoom: 0.7299998
   - id: 6
     fields:
@@ -20590,8 +20590,8 @@ MonoBehaviour:
         y: 708.49207
         width: 160
         height: 30
-    canvasScrollPosition: {x: 44.099236, y: 692.1841}
-    canvasZoom: 0.69000024
+    canvasScrollPosition: {x: 139.3533, y: 511.09235}
+    canvasZoom: 0.7800002
   - id: 9
     fields:
     - title: Title
