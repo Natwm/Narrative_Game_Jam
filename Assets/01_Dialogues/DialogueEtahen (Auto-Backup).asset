@@ -2806,7 +2806,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: SpawnItem()
+      userScript: SpawnItem();
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -2964,7 +2964,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Ethan()
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -4014,8 +4014,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1390.714
-        y: 954.4286
+        x: 1393.3456
+        y: 953.1128
         width: 160
         height: 30
     - id: 17
@@ -4803,7 +4803,9 @@ MonoBehaviour:
       conditionsString: 
       userScript: 'waitForPlayerInput();
 
-        SpawnAObject("couch")'
+        SpawnAObject("couch");
+
+        Dad()'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -5203,7 +5205,9 @@ MonoBehaviour:
       conditionsString: 
       userScript: 'waitForPlayerInput();
 
-        SpawnAObject("metal-boxes")'
+        SpawnAObject("metal-boxes");
+
+        Mom()'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -5600,7 +5604,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Hina()
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -5922,7 +5926,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Ethan()
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -6248,7 +6252,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 1390.714
-        y: 2353.4578
+        y: 2355.1106
         width: 160
         height: 30
     - id: 45
@@ -6655,11 +6659,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -6719,8 +6723,8 @@ MonoBehaviour:
         y: 1926.9266
         width: 160
         height: 30
-    canvasScrollPosition: {x: 1167.1854, y: 1278.6509}
-    canvasZoom: 1.1499997
+    canvasScrollPosition: {x: 1205.9795, y: 1954.6025}
+    canvasZoom: 1.2099996
   - id: 5
     fields:
     - title: Title
@@ -6925,7 +6929,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Ethan()
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -7641,7 +7645,9 @@ MonoBehaviour:
       conditionsString: 
       userScript: 'waitForPlayerInput();
 
-        SpawnAObject("hina")'
+        SpawnAObject("hina");
+
+        Hina()'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -8044,7 +8050,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Mom()
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -9244,7 +9250,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: 'WaitForMaurice();
+
+        Ethan()'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -9555,7 +9563,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: GoToNextScene()
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -9723,7 +9731,7 @@ MonoBehaviour:
         y: 1062.841
         width: 160
         height: 30
-    canvasScrollPosition: {x: 47.86737, y: 631.7538}
+    canvasScrollPosition: {x: 7.058777, y: 1047.0593}
     canvasZoom: 0.8499997
   - id: 6
     fields:
@@ -9931,7 +9939,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Ethan()
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -11853,7 +11861,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Dad()
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -12018,8 +12026,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 535.78937
-        y: 1402.3684
+        x: 536.6158
+        y: 1400.7156
         width: 160
         height: 30
     - id: 28
@@ -12490,7 +12498,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Hina()
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -13129,7 +13137,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Mom()
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -13449,7 +13457,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Ethan()
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -13616,8 +13624,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 535.78937
-        y: 2402.3684
+        x: 538.26874
+        y: 2404.0212
         width: 160
         height: 30
     - id: 48
@@ -14245,7 +14253,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: WaitForMaurice()
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -14487,7 +14495,7 @@ MonoBehaviour:
         y: 270.137
         width: 160
         height: 30
-    canvasScrollPosition: {x: 339.3237, y: 4.263977}
+    canvasScrollPosition: {x: 358.33197, y: 2411.7026}
     canvasZoom: 1.2099994
   - id: 7
     fields:
@@ -14693,7 +14701,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Ethan()
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -15091,7 +15099,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Mom()
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -15172,7 +15180,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Hina()
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -15418,7 +15426,9 @@ MonoBehaviour:
       conditionsString: 
       userScript: 'waitForPlayerInput();
 
-        SpawnAObject("screaming")'
+        SpawnAObject("screaming");
+
+        Dad()'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -15503,8 +15513,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 417
-        y: 611
+        x: 422.78513
+        y: 614.3058
         width: 160
         height: 30
     - id: 12
@@ -17015,7 +17025,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: WaitForMaurice()
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -17247,7 +17257,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: GoToNextScene()
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -17257,7 +17267,7 @@ MonoBehaviour:
         y: 1709.9691
         width: 160
         height: 30
-    canvasScrollPosition: {x: 94.053894, y: 1125.669}
+    canvasScrollPosition: {x: 176.69855, y: 1187.6038}
     canvasZoom: 1.2099996
   - id: 8
     fields:
@@ -17465,7 +17475,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Ethan()
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -17784,7 +17794,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Hina()
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -18191,7 +18201,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Mom()
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -18433,7 +18443,9 @@ MonoBehaviour:
       conditionsString: 
       userScript: 'waitForPlayerInput();
 
-        SpawnAObject("milk")'
+        SpawnAObject("milk");
+
+        Dad()'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -18591,7 +18603,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Mom()
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -19796,7 +19808,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: WaitForMaurice()
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -20106,7 +20118,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: GoToNextScene()
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -20195,8 +20207,8 @@ MonoBehaviour:
         y: 1275.9185
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.21000028
+    canvasScrollPosition: {x: 240.58792, y: 1181.3002}
+    canvasZoom: 1.2299998
   - id: 9
     fields:
     - title: Title
@@ -20402,7 +20414,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Ethan()
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -21612,8 +21624,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 451
-        y: 847
+        x: 419.59503
+        y: 846.1736
         width: 160
         height: 30
     - id: 17
@@ -22250,7 +22262,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: WaitForMaurice()
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -22574,7 +22586,7 @@ MonoBehaviour:
         y: 1446
         width: 160
         height: 30
-    canvasScrollPosition: {x: 41.875324, y: 7.501046}
+    canvasScrollPosition: {x: 207.99101, y: 926.4465}
     canvasZoom: 1.2099999
   syncInfo:
     syncActors: 0
