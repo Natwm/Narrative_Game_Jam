@@ -4943,12 +4943,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: FR
-        value: "Et ta maman ? Elle s\u2019occupait de ta petite s\u0153ur pendant
-          ce temps ?"
+        value: "Elle s\u2019occupait de ta petite s\u0153ur pendant ce temps ?"
         type: 4
         typeString: CustomFieldType_Localization
       - title: UK
-        value: What about your mom? Was she looking after your sister during dinner?
+        value: Was she looking after your sister during dinner?
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 4
@@ -6566,7 +6565,7 @@ MonoBehaviour:
     - id: 49
       fields:
       - title: Title
-        value: New Dialogue Entry
+        value: 
         type: 0
         typeString: CustomFieldType_Text
       - title: Pictures
@@ -6612,11 +6611,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: FR
-        value: 
+        value: 'Et ta maman ? '
         type: 4
         typeString: CustomFieldType_Localization
       - title: UK
-        value: 
+        value: 'What about your mom? '
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 4
@@ -6723,8 +6722,8 @@ MonoBehaviour:
         y: 1926.9266
         width: 160
         height: 30
-    canvasScrollPosition: {x: 1076.1641, y: 1268.673}
-    canvasZoom: 1.2099994
+    canvasScrollPosition: {x: 688.09155, y: 1882.7585}
+    canvasZoom: 0.5799999
   - id: 5
     fields:
     - title: Title
@@ -9573,7 +9572,7 @@ MonoBehaviour:
     - id: 35
       fields:
       - title: Title
-        value: New Dialogue Entry
+        value: 
         type: 0
         typeString: CustomFieldType_Text
       - title: Pictures
@@ -9652,7 +9651,7 @@ MonoBehaviour:
     - id: 36
       fields:
       - title: Title
-        value: New Dialogue Entry
+        value: 
         type: 0
         typeString: CustomFieldType_Text
       - title: Pictures
@@ -9696,11 +9695,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: FR
-        value: 
+        value: ...
         type: 4
         typeString: CustomFieldType_Localization
       - title: UK
-        value: 
+        value: ...
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 5
@@ -9807,8 +9806,8 @@ MonoBehaviour:
         y: 1359.853
         width: 160
         height: 30
-    canvasScrollPosition: {x: 72.11188, y: 966.878}
-    canvasZoom: 1.3599993
+    canvasScrollPosition: {x: 0, y: 456.66922}
+    canvasZoom: 0.7299998
   - id: 6
     fields:
     - title: Title
@@ -12656,7 +12655,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 535.78937
-        y: 1752.3684
+        y: 1751.232
         width: 160
         height: 30
     - id: 35
@@ -14489,7 +14488,7 @@ MonoBehaviour:
     - id: 58
       fields:
       - title: Title
-        value: New Dialogue Entry
+        value: 
         type: 0
         typeString: CustomFieldType_Text
       - title: Pictures
@@ -14533,11 +14532,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: FR
-        value: 
+        value: Qui est-ce ?
         type: 4
         typeString: CustomFieldType_Localization
       - title: UK
-        value: 
+        value: Who is he ?
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 6
@@ -14644,8 +14643,8 @@ MonoBehaviour:
         y: 1769.4014
         width: 160
         height: 30
-    canvasScrollPosition: {x: 128.43588, y: 1452.5795}
-    canvasZoom: 0.90999967
+    canvasScrollPosition: {x: 183.19305, y: 2329.0537}
+    canvasZoom: 0.87999994
   - id: 7
     fields:
     - title: Title
@@ -17494,8 +17493,8 @@ MonoBehaviour:
         y: 436.4237
         width: 160
         height: 30
-    canvasScrollPosition: {x: 141.88731, y: 683.82367}
-    canvasZoom: 1.1799994
+    canvasScrollPosition: {x: 71.59094, y: 0}
+    canvasZoom: 0.87999964
   - id: 8
     fields:
     - title: Title
@@ -18404,8 +18403,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: FR
-        value: "Non c\u2019est papa, mais quand j\u2019ai demand\xE9 \xE0 maman ou
-          il \xE9tait elle a dit il \xE9tait parti dans la nuit et je devais me d\xE9brouiller."
+        value: "J\u2019ai demand\xE9 \xE0 maman ou il \xE9tait elle a dit il \xE9tait
+          parti dans la nuit et je devais me d\xE9brouiller."
         type: 4
         typeString: CustomFieldType_Localization
       - title: UK
@@ -18434,7 +18433,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 456
+        x: 457.38892
         y: 546
         width: 160
         height: 30
@@ -18644,13 +18643,11 @@ MonoBehaviour:
         typeString: CustomFieldType_Text
       - title: FR
         value: "J\u2019ai regard\xE9 comment papa il fait <color=#780422>le biberon
-          </color>pour Hina et j\u2019ai fait comme lui et j\u2019ai m\xEAme nettoy\xE9
-          pour pas que maman se f\xE2che."
+          </color>pour Hina. "
         type: 4
         typeString: CustomFieldType_Localization
       - title: UK
-        value: I use to watch Daddy make <color=#780422>the bottle </color>for Hina
-          and I did what he did and I even cleaned it up so Mommy wouldn't get mad.
+        value: I use to watch Daddy make <color=#780422>the bottle </color>for Hina.
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 8
@@ -18678,7 +18675,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 456
+        x: 454.61115
         y: 695
         width: 160
         height: 30
@@ -19609,11 +19606,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: FR
-        value: Et le soir tu remettais Hina dans son lit ?
+        value: Et... le soir tu remettais Hina dans son lit ?
         type: 4
         typeString: CustomFieldType_Localization
       - title: UK
-        value: And at night you put Hina back to bed?
+        value: And... at night you put Hina back to bed?
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 8
@@ -20358,7 +20355,7 @@ MonoBehaviour:
     - id: 35
       fields:
       - title: Title
-        value: New Dialogue Entry
+        value: 
         type: 0
         typeString: CustomFieldType_Text
       - title: Pictures
@@ -20402,11 +20399,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: FR
-        value: 
+        value: ...
         type: 4
         typeString: CustomFieldType_Localization
       - title: UK
-        value: 
+        value: ...
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 8
@@ -20437,7 +20434,7 @@ MonoBehaviour:
     - id: 36
       fields:
       - title: Title
-        value: New Dialogue Entry
+        value: 
         type: 0
         typeString: CustomFieldType_Text
       - title: Pictures
@@ -20449,11 +20446,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -20481,11 +20478,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: FR
-        value: 
+        value: Non, c'est papa.
         type: 4
         typeString: CustomFieldType_Localization
       - title: UK
-        value: 
+        value: No, it's daddy.
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 8
@@ -20516,7 +20513,7 @@ MonoBehaviour:
     - id: 37
       fields:
       - title: Title
-        value: New Dialogue Entry
+        value: 
         type: 0
         typeString: CustomFieldType_Text
       - title: Pictures
@@ -20528,11 +20525,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -20560,11 +20557,13 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: FR
-        value: 
+        value: "J\u2019ai fait comme lui et... j\u2019ai m\xEAme nettoy\xE9 pour
+          pas que maman se f\xE2che."
         type: 4
         typeString: CustomFieldType_Localization
       - title: UK
-        value: 
+        value: I did what he did and... I even cleaned it up so Mommy wouldn't get
+          mad.
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 8
@@ -20592,8 +20591,8 @@ MonoBehaviour:
         y: 708.49207
         width: 160
         height: 30
-    canvasScrollPosition: {x: 144.01408, y: 1343.8447}
-    canvasZoom: 1.2599998
+    canvasScrollPosition: {x: 0, y: 158.99997}
+    canvasZoom: 0.7200002
   - id: 9
     fields:
     - title: Title
