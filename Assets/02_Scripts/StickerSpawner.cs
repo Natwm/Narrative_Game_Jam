@@ -169,7 +169,7 @@ public class StickerSpawner : MonoBehaviour
 
     void OnDisable()
     {
-        //Lua.UnregisterFunction("SpawnItem");
+        Lua.UnregisterFunction("SpawnItem");
     }
 
 

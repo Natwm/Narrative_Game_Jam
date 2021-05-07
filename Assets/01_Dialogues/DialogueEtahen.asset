@@ -4972,8 +4972,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1390.714
-        y: 1557.7247
+        x: 1394.5975
+        y: 1558.6957
         width: 160
         height: 30
     - id: 29
@@ -5177,7 +5177,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: SetContinueMode(true)
         type: 0
         typeString: CustomFieldType_Text
       - title: FR
@@ -5199,13 +5199,15 @@ MonoBehaviour:
       - originConversationID: 4
         originDialogueID: 31
         destinationConversationID: 4
-        destinationDialogueID: 32
+        destinationDialogueID: 51
         isConnector: 0
         priority: 2
       conditionsString: 
       userScript: 'SpawnAObject("metal-boxes");
 
-        Mom()'
+        Mom();
+
+        waitForPlayerInput()'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -6723,8 +6725,87 @@ MonoBehaviour:
         y: 1926.9266
         width: 160
         height: 30
-    canvasScrollPosition: {x: 1076.1641, y: 1268.673}
-    canvasZoom: 1.2099994
+    - id: 51
+      fields:
+      - title: Title
+        value: New Dialogue Entry
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: SetContinueMode(false);
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: FR
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: UK
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      conversationID: 4
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 4
+        originDialogueID: 51
+        destinationConversationID: 4
+        destinationDialogueID: 32
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1634.4034
+        y: 1714.6223
+        width: 160
+        height: 30
+    canvasScrollPosition: {x: 1100.843, y: 1813.4153}
+    canvasZoom: 1.0299995
   - id: 5
     fields:
     - title: Title
@@ -7173,8 +7254,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 342.35287
-        y: 284.1176
+        x: 343.8235
+        y: 282.64703
         width: 160
         height: 30
     - id: 5
@@ -7642,6 +7723,12 @@ MonoBehaviour:
         destinationDialogueID: 11
         isConnector: 0
         priority: 2
+      - originConversationID: 5
+        originDialogueID: 10
+        destinationConversationID: 5
+        destinationDialogueID: 38
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 'waitForPlayerInput();
 
@@ -7700,7 +7787,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: SetContinueMode(false)
+        value: 
         type: 0
         typeString: CustomFieldType_Text
       - title: FR
@@ -9807,8 +9894,87 @@ MonoBehaviour:
         y: 1359.853
         width: 160
         height: 30
-    canvasScrollPosition: {x: 72.11188, y: 966.878}
-    canvasZoom: 1.3599993
+    - id: 38
+      fields:
+      - title: Title
+        value: New Dialogue Entry
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: SetContinueMode(false)
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: FR
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: UK
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 38
+        destinationConversationID: 5
+        destinationDialogueID: 11
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 562.82544
+        y: 588.4483
+        width: 160
+        height: 30
+    canvasScrollPosition: {x: 282.07962, y: 1229.1346}
+    canvasZoom: 1.2699994
   - id: 6
     fields:
     - title: Title
@@ -10867,7 +11033,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: SetContinueMode(false)
+        value: 
         type: 0
         typeString: CustomFieldType_Text
       - title: FR
@@ -14644,8 +14810,8 @@ MonoBehaviour:
         y: 1769.4014
         width: 160
         height: 30
-    canvasScrollPosition: {x: 128.43588, y: 1452.5795}
-    canvasZoom: 0.90999967
+    canvasScrollPosition: {x: 342.53296, y: 296.1166}
+    canvasZoom: 1.0299996
   - id: 7
     fields:
     - title: Title
@@ -17494,8 +17660,8 @@ MonoBehaviour:
         y: 436.4237
         width: 160
         height: 30
-    canvasScrollPosition: {x: 141.88731, y: 683.82367}
-    canvasZoom: 1.1799994
+    canvasScrollPosition: {x: 189.71292, y: 385.366}
+    canvasZoom: 0.8199997
   - id: 8
     fields:
     - title: Title
@@ -20592,7 +20758,7 @@ MonoBehaviour:
         y: 708.49207
         width: 160
         height: 30
-    canvasScrollPosition: {x: 144.01408, y: 1343.8447}
+    canvasScrollPosition: {x: 315.44263, y: 1152.3812}
     canvasZoom: 1.2599998
   - id: 9
     fields:
@@ -22971,7 +23137,7 @@ MonoBehaviour:
         y: 1446
         width: 160
         height: 30
-    canvasScrollPosition: {x: 204.68526, y: 909.09106}
+    canvasScrollPosition: {x: 306.33817, y: 513.2232}
     canvasZoom: 1.2099999
   syncInfo:
     syncActors: 0
