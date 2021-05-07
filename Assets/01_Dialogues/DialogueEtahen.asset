@@ -5248,7 +5248,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: SetContinueMode(false)
         type: 0
         typeString: CustomFieldType_Text
       - title: FR
@@ -6552,8 +6552,8 @@ MonoBehaviour:
         y: 2458
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 612.71216}
-    canvasZoom: 1.1799997
+    canvasScrollPosition: {x: 0, y: 1982.7046}
+    canvasZoom: 1.2399997
   - id: 5
     fields:
     - title: Title
