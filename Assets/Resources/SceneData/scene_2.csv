@@ -1,13 +1,19 @@
 name,optional,iteration  number
-demon,,
-laugh,,
+demon,yes,2
+laugh,yes,3
 anger,yes,3
 hina2,,
 mum,,
-milk,,
 toy1,,
 toy2,,
-toy3,,
+toy3,yes,2
 door,,
 policecap,yes,2
 screaming,,
+television,yes,
+rattle,yes,2
+couch,yes,2
+saddad,yes,1
+boom,yes,2
+ethan2,yes,
+ethan,,

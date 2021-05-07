@@ -1,10 +1,20 @@
 name,optional,iteration  number
-bread,,
+baguette,,
 drugs,,
 kodad,,
 magicsong,,
-saddad,,
-toy1,,
-toy2,,
-toy3,,
+saddad,yes,
+toy1,yes,1
+toy2,yes,2
+toy3,yes,2
 blanket,,
+rattle,yes,2
+crying,,
+kodad,,
+teddy,yes,1
+hina3,yes,1
+comic,yes,1
+demon,yes,4
+sleeping,yes,2
+ethan,,
+ethan2,,

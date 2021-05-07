@@ -1,11 +1,14 @@
-mandatory,optional,iteration  number
+name,optional,iteration  number
 pizza,,
 couch,,
 television,,
 metal-boxes,,
-demon,,
+demon,yes,2
 milk,,
 hina,,
-saddad,,
-cookie,yes,3
-rattle,yes,2
+mum,yes,1
+saddad,yes,1
+cookie,,3
+rattle,,2
+ethan,,
+ethan2,,
