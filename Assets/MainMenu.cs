@@ -24,16 +24,19 @@ public class MainMenu : MonoBehaviour
     public Text creditText;
     public Text exitText;
 
+    public bool eventStop;
+
     [FMODUnity.EventRef]
     public string MusicMenu;
 
-    FMOD.Studio.EventInstance EventMenu;
+   public FMOD.Studio.EventInstance EventMenu;
 
     public Text PressStart;
 
     public void PetiteTransitionPasPiquéeDesHannetons()
     {
-        
+        if (!eventStop)
+        {
         EventMenu = FMODUnity.RuntimeManager.CreateInstance(MusicMenu); 
         ParentImage.rectTransform.DOMove(endPoint.position,5f);
         ParentImage.DOFade(255,3000);
@@ -48,7 +51,16 @@ public class MainMenu : MonoBehaviour
                tempText.DOFade(255, 3000);
             }
         }
+            eventStop = true;
         Invoke("LaunchTitle", 1);
+
+        }
+    }
+
+    public void TerminateSound()
+    {
+        Debug.Log("OkBoomer");
+        EventMenu.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 
     public void LaunchTitle()
@@ -141,6 +153,8 @@ public class MainMenu : MonoBehaviour
         ParentImage.rectTransform.SetPositionAndRotation(startPoint.transform.position, ParentImage.rectTransform.rotation);
     }
 
+    
+
     // Update is called once per frame
     void Update()
     {
@@ -148,5 +162,6 @@ public class MainMenu : MonoBehaviour
         {
             PetiteTransitionPasPiquéeDesHannetons();
         }
+        
     }
 }

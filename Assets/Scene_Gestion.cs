@@ -18,6 +18,7 @@ public class Scene_Gestion : MonoBehaviour
      public string MusicAmbiant;
 
     FMOD.Studio.EventInstance AmbiantEvent;
+    MainMenu mainMenuScript;
 
     public void InitializeScene()
     {
@@ -27,6 +28,10 @@ public class Scene_Gestion : MonoBehaviour
        
     }
 
+    public void Start()
+    {
+        mainMenuScript = FindObjectOfType<MainMenu>();
+    }
 
     //LANCER LE FADE TO BLACK
     public void SceneTransition()
@@ -37,16 +42,22 @@ public class Scene_Gestion : MonoBehaviour
    
     }
     
+    
+
     //CHARGEMENT DE LA SCENE SUIVANTE
     public void LoadNewScene()
     {
+        
         ChangeScene();
         SceneManager.LoadSceneAsync(GameManager.instance.CurrentScene);
     }
 
     private void OnLevelWasLoaded(int level)
     {
-        
+        if (GameManager.instance.CurrentScene == 1)
+        {
+            LaunchMusic();
+        }
         BlackFade.DOColor(Dotween, 2);
         Invoke("DisableFade",2);   
     }
