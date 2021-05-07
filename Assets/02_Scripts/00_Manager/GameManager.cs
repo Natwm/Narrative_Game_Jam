@@ -70,8 +70,17 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*if (Input.GetKeyDown(KeyCode.A))
+            DadMusique();
+
+        if (Input.GetKeyDown(KeyCode.Z))
+            EthanMusique();
+
         if (Input.GetKeyDown(KeyCode.E))
-            print(IsDrawValid());//AddItemToDraw("pomme");
+            MotherMusique();
+
+        if (Input.GetKeyDown(KeyCode.R))
+            HinaMusique();*/
 
     }
     #endregion
@@ -161,7 +170,8 @@ public class GameManager : MonoBehaviour
 
     public void MotherMusique()
     {
-        soundEvent.setParameterByName("MUSIC", 0.25f);
+        print("Mother");
+        soundEvent.setParameterByName("MUSIC", 0.26f);
     }
 
     public void HinaMusique()
@@ -206,11 +216,11 @@ public class GameManager : MonoBehaviour
     #region Lua region
     void OnEnable()
     {
-        Lua.RegisterFunction("Dad", this, SymbolExtensions.GetMethodInfo(() => EthanMusique()));
-        Lua.RegisterFunction("Mom", this, SymbolExtensions.GetMethodInfo(() => EthanMusique()));
-        Lua.RegisterFunction("Hina", this, SymbolExtensions.GetMethodInfo(() => EthanMusique()));
+        Lua.RegisterFunction("Dad", this, SymbolExtensions.GetMethodInfo(() => DadMusique()));
+        Lua.RegisterFunction("Mom", this, SymbolExtensions.GetMethodInfo(() => MotherMusique()));
+        Lua.RegisterFunction("Hina", this, SymbolExtensions.GetMethodInfo(() => HinaMusique()));
         Lua.RegisterFunction("Ethan", this, SymbolExtensions.GetMethodInfo(() => EthanMusique()));
-        Lua.RegisterFunction("Nothing", this, SymbolExtensions.GetMethodInfo(() => EthanMusique()));
+        Lua.RegisterFunction("Nothing", this, SymbolExtensions.GetMethodInfo(() => NothingMusique()));
 
         Lua.RegisterFunction("AddItem", this, SymbolExtensions.GetMethodInfo(() => AddItemNeeded(string.Empty)));
         Lua.RegisterFunction("ResetItem", this, SymbolExtensions.GetMethodInfo(() => ResetItemNeeded()));
