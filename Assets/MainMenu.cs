@@ -132,14 +132,14 @@ public class MainMenu : MonoBehaviour
             Debug.Log("Toggle Sound On");
             soundbutton.sprite = soundsprite[1];
             soundState = false;
-            Master.setPaused(true);
+            Master.setPaused(false);
         }
         else
         {
             Debug.Log("Toggle Sound Off");
             soundbutton.sprite = soundsprite[0];
             soundState = true;
-            Master.setPaused(false);
+            Master.setPaused(true);
         }
     }
 
