@@ -35,7 +35,10 @@ public class Scene_Gestion : MonoBehaviour
    
     }
     
-    
+    public void ReturnToMenu()
+    {
+        SceneTransition();
+    }
 
     //CHARGEMENT DE LA SCENE SUIVANTE
     public void LoadNewScene()
@@ -43,6 +46,13 @@ public class Scene_Gestion : MonoBehaviour
         
         ChangeScene();
         
+    }
+
+    public void LoadNewScene2()
+    {
+
+        ChangeScene2();
+
     }
 
     private void OnLevelWasLoaded(int level)
@@ -63,6 +73,12 @@ public class Scene_Gestion : MonoBehaviour
     public void ChangeScene()
     {
         GameManager.instance.CurrentScene++;
+        SceneManager.LoadScene(GameManager.instance.CurrentScene);
+    }
+
+    public void ChangeScene2()
+    {
+        GameManager.instance.CurrentScene=0;
         SceneManager.LoadScene(GameManager.instance.CurrentScene);
     }
 
