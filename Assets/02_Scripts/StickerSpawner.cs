@@ -135,7 +135,7 @@ public class StickerSpawner : MonoBehaviour
         {
             item.SetActive(false);
         }
-        GameManager.instance.CurrentScene++;
+        //GameManager.instance.CurrentScene++;
         GameManager.instance.maxAmountOfSticker = FindObjectsOfType<StickerBehaviours>().Length - 1;
     }
 
